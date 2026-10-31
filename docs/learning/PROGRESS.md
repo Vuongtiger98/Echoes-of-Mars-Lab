@@ -1,12 +1,12 @@
 # PROGRESS | Nhật ký thành thạo có bằng chứng
 
-**Trạng thái:** G0 environment checkpoint hoàn thành ngày 2026-11-01 tại commit `b83e262`. Canonical project chưa có Java source/test và chưa có bài kiểm tra trực tiếp của người học. Đừng hiểu L0 là người dùng chưa từng học.
+**Trạng thái:** G0 hoàn thành; G1 entry point đang `IN_PROGRESS`. Starter compile/run được nhưng chưa có output vì người học chưa hoàn thành `TODO`. Đừng hiểu L0 là người dùng chưa từng học.
 
 **Evidence boundary:** Việc người dùng chọn kiến trúc greenfield chứng minh quyết định dự án, không chứng minh mastery Java. Không nâng theory/coding level trong phiên audit.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |
 |---|---|---|---|---|---|---|---|
-| CORE-01 | javac, JVM, classpath, main | 2 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
+| CORE-01 | javac, JVM, classpath, main | 2 | L0 | L0 | Chưa có câu trả lời cá nhân; mapped `java-055` (unreviewed) | Codex scaffold compile/run exit 0, output 0 dòng; chưa có learner code | 2026-11-01 |
 | CORE-02 | Biến, primitive/reference, String | 2 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | CORE-03 | if, switch, for, while, input | 2 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | OOP-01 | Class, object, constructor, this | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |

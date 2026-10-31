@@ -29,4 +29,12 @@ Echoes of Mars Learning Lab là dự án Java xuyên suốt dùng để học v�
 
 ## Build
 
-Chưa có source hoặc lệnh build. Lệnh `javac --release 21` sẽ được ghi sau khi vertical slice G1 được tạo và kiểm chứng.
+G1 starter có thể compile bằng raw `javac`. Chạy các lệnh sau tại project root:
+
+```powershell
+New-Item -ItemType Directory -Force out
+javac --release 21 -encoding UTF-8 -d out src/main/java/com/echoesofmars/lab/EchoesOfMarsApplication.java
+java -cp out com.echoesofmars.lab.EchoesOfMarsApplication
+```
+
+G1 chỉ hoàn thành khi output là đúng một dòng `Echoes of Mars Learning Lab`. Starter hiện còn `TODO` để người học tự viết.

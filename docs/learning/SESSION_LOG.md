@@ -40,3 +40,15 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Pre-commit check phát hiện trailing whitespace/blank EOF và đã sửa trước commit. Chưa có remote Git.
 - **Theory/coding changes:** GIT-01 giữ L0/L0 vì Codex thực hiện thao tác; không gán năng lực cho người học.
 - **Next session action:** G1 — người học tạo/chỉnh entry point Java 21 tối thiểu, dự đoán output; Codex compile/run và ghi evidence.
+
+## 2026-11-01 / ENTRYPOINT-G1-003 (IN_PROGRESS)
+
+- **Objective and concepts:** Java 21 package/class/main, raw javac, classpath và fully qualified class name.
+- **IBM course(s), question UIDs:** IBM 2; `java-055` được map làm recall prompt, trạng thái `unreviewed`, chưa dùng answer_raw làm lời giải.
+- **Learner theory answers:** Chưa trả lời câu dự đoán về fully qualified class name.
+- **Learner-authored code / AI-authored code:** Codex tạo starter package/class/main và hints; `println` còn TODO cho người học.
+- **Files changed and reason:** `EchoesOfMarsApplication.java` starter; `README.md` có lệnh compile/run; learning docs ghi trạng thái.
+- **Commands actually executed and results:** `javac --release 21 ...` exit 0; `java -cp out com.echoesofmars.lab.EchoesOfMarsApplication` exit 0; output line count 0.
+- **Mistakes, fixes, and new questions:** Không có compile error; behavioral acceptance chưa đạt vì TODO chưa hoàn thành.
+- **Theory/coding changes:** CORE-01 giữ L0/L0; chưa có evidence cá nhân.
+- **Next session action:** Người học thêm đúng một câu lệnh in output, chạy lại hoặc yêu cầu Codex review; sau đó kiểm tra exact output và commit completion.
