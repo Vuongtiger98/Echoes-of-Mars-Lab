@@ -28,3 +28,15 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Ban đầu Codex audit nhầm repository cũ do cwd cũ; người dùng sửa path. Không chuyển bằng chứng build cũ sang project mới. Cần quyết định Java target, package gốc và duyệt G0/G1.
 - **Theory/coding changes:** Không đổi; tất cả giữ L0 vì chưa có evidence cá nhân.
 - **Next session action:** Sau khi người dùng duyệt proposal, thực hiện G0 rồi giao G1 như bài coding đầu tiên.
+
+## 2026-11-01 / ENVIRONMENT-G0-002
+
+- **Objective and concepts:** Chuẩn bị Git environment an toàn; `.gitignore`, `.gitattributes`, branch `main`, checkpoint.
+- **IBM course(s), question UIDs:** IBM 6 (Git/GitHub) được chạm tới ở mức kỹ thuật; chưa đánh giá theory/coding và chưa dùng question UID.
+- **Learner theory answers:** Người dùng phê duyệt Java 21, package gốc và thứ tự G0/G1; chưa trả lời câu hỏi Git.
+- **Learner-authored code / AI-authored code:** Codex tạo `.gitignore`, `.gitattributes`, `README.md`; không có Java code.
+- **Files changed and reason:** Root Git hygiene + project overview; learning documents cập nhật evidence.
+- **Commands actually executed and results:** `git init -b main` success; `git check-ignore -v` xác nhận private bank/reference bị ignore; `git diff --cached --check` PASS; `git commit` success -> `b83e262`.
+- **Mistakes, fixes, and new questions:** Pre-commit check phát hiện trailing whitespace/blank EOF và đã sửa trước commit. Chưa có remote Git.
+- **Theory/coding changes:** GIT-01 giữ L0/L0 vì Codex thực hiện thao tác; không gán năng lực cho người học.
+- **Next session action:** G1 — người học tạo/chỉnh entry point Java 21 tối thiểu, dự đoán output; Codex compile/run và ghi evidence.

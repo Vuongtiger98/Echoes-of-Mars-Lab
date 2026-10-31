@@ -26,6 +26,11 @@
 **Consequence:** Baseline hiện có 0 Java source và 0 test. Mỗi chức năng mới phải được thêm như một vertical slice nhỏ với expected behavior, lệnh kiểm chứng thật và phân biệt rõ phần người dùng tự viết/phần AI hỗ trợ. Source cũ chỉ dùng làm reference khi người dùng yêu cầu cụ thể.
 
 ## ADR-006: Không tạo kiến trúc giả bằng folder/interface rỗng
-**Status:** Proposed; awaiting approval with architecture plan.
+**Status:** Accepted by user on 2026-11-01.
 **Decision:** Bắt đầu bằng một CLI chạy được, sau đó chỉ tạo package/layer khi vertical slice cần. Kiến trúc mục tiêu vẫn giữ domain, application, adapters, persistence, Spring, database, deployment và AI.
 **Consequence:** Giữ toàn bộ scope P0–P9 nhưng giảm rủi ro big-bang scaffolding và code do AI sinh không có hành vi.
+
+## ADR-007: Java target và package gốc
+**Status:** Accepted by user on 2026-11-01.
+**Decision:** Dùng JDK 25.0.3 hiện có để compile với target `--release 21`; package gốc là `com.echoesofmars.lab`.
+**Consequence:** Code chỉ dùng Java API/language level phù hợp Java 21. G1 phải chứng minh lệnh raw `javac --release 21` trước khi đưa Maven vào.

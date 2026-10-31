@@ -1,6 +1,6 @@
 # PROGRESS | Nhật ký thành thạo có bằng chứng
 
-**Trạng thái:** Baseline starter đã audit ngày 2026-11-01. Canonical project chưa có Java source/test và chưa có bài kiểm tra trực tiếp của người học. Đừng hiểu L0 là người dùng chưa từng học.
+**Trạng thái:** G0 environment checkpoint hoàn thành ngày 2026-11-01 tại commit `b83e262`. Canonical project chưa có Java source/test và chưa có bài kiểm tra trực tiếp của người học. Đừng hiểu L0 là người dùng chưa từng học.
 
 **Evidence boundary:** Việc người dùng chọn kiến trúc greenfield chứng minh quyết định dự án, không chứng minh mastery Java. Không nâng theory/coding level trong phiên audit.
 
@@ -16,7 +16,7 @@
 | JAVA-04 | Exceptions, validation, file I/O | 2–4 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | JAVA-05 | Lambda, Streams, threading, JVM | 3/10+ | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | ARCH-01 | State, service, composition, testability | 1/10 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
-| GIT-01 | Git, branch, commit, PR | 6 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
+| GIT-01 | Git, branch, commit, PR | 6 | L0 | L0 | Chưa có câu trả lời/thao tác cá nhân | Codex tạo branch `main`, ignore gate và commit `b83e262`; không phải learner evidence | 2026-11-01 |
 | WEB-01 | HTML/CSS/JS browser basics | 5 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | SPR-01 | Spring DI, REST, validation, security | 7 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | DB-01 | SQL, JDBC, relational design, ORM, transactions | 8 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
