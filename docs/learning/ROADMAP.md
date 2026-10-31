@@ -9,6 +9,12 @@
 - JDK/Javac 25.0.3 đã cài; Maven/Gradle chưa có.
 - Toàn bộ P0–P9 và 14 học phần vẫn giữ nguyên. Chưa phase nào được đánh dấu hoàn thành.
 
+### Technical progress
+
+- G0 environment complete: `b83e262`, documentation evidence `de8db44`.
+- G1 Java entry point complete: learner-authored change `6eabcc2`; compile/run/exact-output gate passed.
+- P0 có reproducible minimal application baseline về kỹ thuật. Mức hiểu cá nhân vẫn theo `PROGRESS.md`, không suy ra từ build pass.
+
 ## Kiến trúc phát triển đề xuất
 
 Kiến trúc tiến hóa theo vertical slice, không tạo trước mọi folder. Khi các khả năng xuất hiện, code sẽ hướng tới cấu trúc sau:

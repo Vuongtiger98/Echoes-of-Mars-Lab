@@ -5,8 +5,8 @@ Echoes of Mars Learning Lab là dự án Java xuyên suốt dùng để học v�
 ## Trạng thái hiện tại
 
 - Canonical folder: `D:\Documents\Echoes of Mars Lab`
-- Giai đoạn: G0 — khởi tạo repository và learning governance
-- Java source: chưa tạo
+- Giai đoạn: G1 hoàn thành — Java entry point; G2 sẵn sàng
+- Java source: một entry point trong package `com.echoesofmars.lab`
 - Java được cài: JDK/Javac 25.0.3
 - Target release đã chọn: Java 21 LTS
 - Package gốc đã chọn: `com.echoesofmars.lab`
@@ -29,7 +29,7 @@ Echoes of Mars Learning Lab là dự án Java xuyên suốt dùng để học v�
 
 ## Build
 
-G1 starter có thể compile bằng raw `javac`. Chạy các lệnh sau tại project root:
+G1 được compile bằng raw `javac`. Chạy các lệnh sau tại project root:
 
 ```powershell
 New-Item -ItemType Directory -Force out
@@ -37,4 +37,10 @@ javac --release 21 -encoding UTF-8 -d out src/main/java/com/echoesofmars/lab/Ech
 java -cp out com.echoesofmars.lab.EchoesOfMarsApplication
 ```
 
-G1 chỉ hoàn thành khi output là đúng một dòng `Echoes of Mars Learning Lab`. Starter hiện còn `TODO` để người học tự viết.
+Expected output:
+
+```text
+Echoes of Mars Learning Lab
+```
+
+Kết quả đã được kiểm chứng ngày 2026-11-01: compile exit `0`, run exit `0`, exact output match `true`.

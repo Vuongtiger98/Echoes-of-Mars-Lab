@@ -52,3 +52,28 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Không có compile error; behavioral acceptance chưa đạt vì TODO chưa hoàn thành.
 - **Theory/coding changes:** CORE-01 giữ L0/L0; chưa có evidence cá nhân.
 - **Next session action:** Người học thêm đúng một câu lệnh in output, chạy lại hoặc yêu cầu Codex review; sau đó kiểm tra exact output và commit completion.
+
+## 2026-11-01 / ENTRYPOINT-G1-004 (FUNCTIONAL_PASS)
+
+- **Objective and concepts:** Review learner change và exact-output verification cho G1.
+- **IBM course(s), question UIDs:** IBM 2; `java-055` vẫn unreviewed, chưa dùng answer_raw.
+- **Learner theory answers:** Chưa trả lời vì sao lệnh `java` cần fully qualified class name.
+- **Learner-authored code / AI-authored code:** Người học tự thêm `System.out.println("Echoes of Mars Learning Lab");`; starter/package/main do Codex tạo trước đó.
+- **Files changed and reason:** Learner sửa `EchoesOfMarsApplication.java`; Codex chỉ cập nhật learning evidence, không sửa source của learner.
+- **Commands actually executed and results:** javac `--release 21` exit 0; java exit 0; 1 output line; exact case-sensitive match true; `git diff --check` fail do trailing whitespace tại dòng 25.
+- **Mistakes, fixes, and new questions:** Functional behavior đúng. Còn TODO lỗi thời và whitespace cần người học dọn.
+- **Theory/coding changes:** CORE-01 theory giữ L0; coding L0 -> L1 nhờ một thay đổi nhỏ đúng theo hints và kiểm chứng thật.
+- **Next session action:** Người học xóa TODO đã hoàn tất, xóa trailing whitespace, trả lời câu FQCN; Codex chạy full gate rồi commit G1.
+
+## 2026-11-01 / ENTRYPOINT-G1-005 (TECHNICALLY_COMPLETE)
+
+- **Objective and concepts:** Xác minh cleanup, chạy final gate và checkpoint learner-authored G1.
+- **IBM course(s), question UIDs:** IBM 2; `java-055` mapped/unreviewed; chưa dùng answer_raw.
+- **Learner theory answers:** Chưa trả lời câu FQCN, theory CORE-01 giữ L0.
+- **Learner-authored code / AI-authored code:** Người học giữ đúng một `println` và tự xóa TODO/hints/whitespace; starter package/class/main ban đầu do Codex tạo.
+- **Files changed and reason:** `EchoesOfMarsApplication.java` hoàn thiện G1; README/roadmap/learning docs ghi evidence.
+- **Commands actually executed and results:** `git diff --check` exit 0; javac `--release 21` exit 0; java exit 0; output line count 1; exact case-sensitive match true.
+- **Mistakes, fixes, and new questions:** Cleanup hoàn tất. Câu hỏi còn mở: vì sao launcher cần fully qualified class name khi class nằm trong package.
+- **Theory/coding changes:** CORE-01 theory L0; coding giữ L1. Technical completion không tự nâng theory.
+- **Git evidence:** learner-authored source commit `6eabcc2 feat: complete G1 Java entry point`.
+- **Next session action:** Theory recall CORE-01 hoặc bắt đầu G2 menu/input sau khi preview và prediction.
