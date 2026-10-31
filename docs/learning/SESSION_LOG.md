@@ -108,3 +108,12 @@ Next session action:
 - **Evidence:** `git diff --cached --check` đã báo `new blank line at EOF`, nhưng command ghép tiếp tục chạy commit `434c903` thay vì dừng.
 - **Correction:** Xóa dòng trống thừa; từ gate sau dùng điều kiện chặn commit khi diff check khác 0.
 - **Learning levels:** Không thay đổi; đây là lỗi quy trình của Codex, không phải lỗi learner.
+
+## 2026-11-01 / THEORY-FEEDBACK-009 (RECONCILED)
+
+- **Input snapshot:** Teacher Feedback tham chiếu checkpoint `6eabcc2`, xác nhận G1 kỹ thuật và yêu cầu giữ CORE-01 theory L0 cho tới khi có kiểm tra trực tiếp.
+- **Accepted guidance:** Giữ G1 `TECHNICALLY_COMPLETE`, Coding L1, greenfield roadmap, learner-first coding, tách theory/coding evidence, không tin raw question-bank answers và không tự triển khai phase chưa tới.
+- **Chronology conflict:** Feedback này thuộc snapshot trước `THEORY-CORE01-006`, nơi câu trả lời trực tiếp đã được đánh giá và CORE-01 theory được nâng L0 -> L1 tại commit `627764a`.
+- **Resolution:** Không downgrade theory L1. Giữ ghi chú misconception FQCN/file path và yêu cầu evidence độc lập trước L2. `java-055` vẫn `unreviewed`.
+- **Source/build changes:** Không sửa Java; không chạy lại build/test vì G1 technical evidence không thay đổi.
+- **Next session action:** G2-A vẫn `ASSIGNED`; chờ learner prediction và code attempt.

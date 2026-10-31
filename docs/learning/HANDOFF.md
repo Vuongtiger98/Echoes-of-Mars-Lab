@@ -25,6 +25,7 @@
 - Người học tự cleanup; final gate pass; source commit riêng `6eabcc2`.
 - Đồng bộ `TEACHER_FEEDBACK`: người học dự đoán đúng lỗi khi bỏ package khỏi tên chạy nhưng còn nhầm FQCN với file path; CORE-01 theory L1.
 - Giao G2-A bằng exercise doc: menu tĩnh, `Scanner`, input String một lần và try-with-resources; source chưa sửa.
+- Reconcile feedback checkpoint `6eabcc2`: chấp nhận G1/pedagogy guidance; không hạ CORE-01 theory L1 vì feedback trực tiếp mới hơn đã được sync tại `627764a`.
 
 ## Người học đã chứng minh điều gì?
 
@@ -40,6 +41,7 @@
 4. Maven chỉ được đề xuất sau các raw `javac` slices đầu tiên.
 5. Corpus có 0 verified answer; câu dùng để dạy phải fact-check trước.
 6. Chưa cấu hình Git remote.
+7. Khi feedback dùng snapshot cũ, giữ chronology trong `SESSION_LOG.md`; không ghi đè evidence mới hơn.
 
 ## Hành động tiếp theo
 
