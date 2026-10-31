@@ -1,12 +1,12 @@
 # PROGRESS | Nhật ký thành thạo có bằng chứng
 
-**Trạng thái:** G0 và G1 hoàn thành kỹ thuật. G1 learner-authored commit `6eabcc2` đã vượt compile/run/exact-output/diff-check gate. Đừng hiểu build pass là đã hiểu lý thuyết.
+**Trạng thái:** G0/G1 hoàn thành kỹ thuật. `TEACHER_FEEDBACK` CORE-01 ngày 2026-11-01 đã đồng bộ: theory L1, coding L1. G2 sẵn sàng.
 
 **Evidence boundary:** Việc người dùng chọn kiến trúc greenfield chứng minh quyết định dự án, không chứng minh mastery Java. Không nâng theory/coding level trong phiên audit.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |
 |---|---|---|---|---|---|---|---|
-| CORE-01 | javac, JVM, classpath, main | 2 | L0 | L1 | Chưa trả lời FQCN/JVM; mapped `java-055` (unreviewed) | Người học tự thêm/cleanup `println`; commit `6eabcc2`; compile/run/diff check pass | 2026-11-01 |
+| CORE-01 | javac, JVM, classpath, main | 2 | L1 | L1 | Dự đoán đúng class thiếu package sẽ không chạy; còn nhầm FQCN với file path; Teacher Feedback 2026-11-01 | Người học tự thêm/cleanup `println`; commit `6eabcc2`; compile/run/diff check pass | 2026-11-01 |
 | CORE-02 | Biến, primitive/reference, String | 2 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | CORE-03 | if, switch, for, while, input | 2 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | OOP-01 | Class, object, constructor, this | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |

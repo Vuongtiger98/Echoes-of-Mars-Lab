@@ -77,3 +77,15 @@ Next session action:
 - **Theory/coding changes:** CORE-01 theory L0; coding giữ L1. Technical completion không tự nâng theory.
 - **Git evidence:** learner-authored source commit `6eabcc2 feat: complete G1 Java entry point`.
 - **Next session action:** Theory recall CORE-01 hoặc bắt đầu G2 menu/input sau khi preview và prediction.
+
+## 2026-11-01 / THEORY-CORE01-006 (TEACHER_FEEDBACK_SYNC)
+
+- **Objective and concepts:** Đồng bộ đánh giá lý thuyết FQCN, package, classpath và Java launcher từ ChatGPT.
+- **IBM course(s), question UIDs:** IBM 2; `java-055` vẫn `unreviewed`; feedback không phải fact-check answer_raw.
+- **Learner theory answers:** Nhận biết FQCN dùng để định vị chương trình nhưng gọi nhầm là đường dẫn file; dự đoán đúng `java -cp out EchoesOfMarsApplication` không chạy khi class thuộc package.
+- **Learner-authored code / AI-authored code:** Không sửa Java source trong phiên đồng bộ này.
+- **Files changed and reason:** Chỉ learning records: `PROGRESS.md`, `SESSION_LOG.md`, `HANDOFF.md`.
+- **Commands actually executed and results:** Không chạy build/test vì feedback yêu cầu không sửa source; G1 evidence giữ từ commit `6eabcc2`.
+- **Mistakes, fixes, and new questions:** Cần củng cố classpath + binary/FQCN lookup, phân biệt với source file path.
+- **Theory/coding changes:** CORE-01 theory L0 -> L1 theo Teacher Feedback; coding giữ L1. Không nâng L2.
+- **Next session action:** Tiếp tục G2 và lồng ghép một recall/experiment package-classpath-main.
