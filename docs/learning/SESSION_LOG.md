@@ -89,3 +89,15 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Cần củng cố classpath + binary/FQCN lookup, phân biệt với source file path.
 - **Theory/coding changes:** CORE-01 theory L0 -> L1 theo Teacher Feedback; coding giữ L1. Không nâng L2.
 - **Next session action:** Tiếp tục G2 và lồng ghép một recall/experiment package-classpath-main.
+
+## 2026-11-01 / CONSOLE-G2A-007 (ASSIGNED)
+
+- **Objective and concepts:** Menu tĩnh, Scanner/System.in, String local variable, try-with-resources; chưa control flow.
+- **IBM course(s), question UIDs:** IBM 2; `java-086` mapped/unreviewed, không dùng answer_raw.
+- **Learner theory answers:** Chưa trả lời prediction `hello` và FQCN reinforcement.
+- **Learner-authored code / AI-authored code:** Chưa sửa Java; Codex chỉ viết exercise/acceptance/hints 1–2.
+- **Files changed and reason:** Thêm `docs/learning/exercises/G2A_CONSOLE_INPUT.md`; cập nhật handoff/session.
+- **Commands actually executed and results:** Chưa chạy build mới vì source G2-A chưa được viết; G1 vẫn là baseline pass tại `6eabcc2`.
+- **Mistakes, fixes, and new questions:** Không có; chờ learner attempt. Hint 3 chưa dùng.
+- **Theory/coding changes:** Không đổi level khi mới giao bài.
+- **Next session action:** Người học sửa một file theo acceptance; Codex review diff và chạy hai input cases.

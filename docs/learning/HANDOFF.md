@@ -8,9 +8,9 @@
 - **Build status / tests:** G1 `git diff --check`, compile, run và exact-output gate đều pass
 - **Current architecture:** Greenfield starter kit; architecture evolution proposed in `ROADMAP.md`
 - **Current user-selected objective:** Dựng lại Echoes of Mars Learning Lab từ đầu, giữ coverage 14 IBM courses + 386 questions
-- **Feature slice in progress:** G1 technically complete; G2 ready
+- **Feature slice in progress:** G2-A console input `ASSIGNED`; chưa có learner attempt
 - **Knowledge topics / IBM mapping:** CORE-01 / IBM 2 — theory L1, coding L1
-- **Question UIDs used:** `java-055` mapped, unreviewed; chưa dùng answer_raw
+- **Question UIDs used:** `java-055`, `java-086` mapped/unreviewed; chưa dùng answer_raw
 
 ## Đã làm trong phiên
 
@@ -24,6 +24,7 @@
 - Người học tự thêm `println`; exact output đạt; review phát hiện TODO lỗi thời và trailing whitespace.
 - Người học tự cleanup; final gate pass; source commit riêng `6eabcc2`.
 - Đồng bộ `TEACHER_FEEDBACK`: người học dự đoán đúng lỗi khi bỏ package khỏi tên chạy nhưng còn nhầm FQCN với file path; CORE-01 theory L1.
+- Giao G2-A bằng exercise doc: menu tĩnh, `Scanner`, input String một lần và try-with-resources; source chưa sửa.
 
 ## Người học đã chứng minh điều gì?
 
@@ -34,16 +35,17 @@
 ## Vấn đề mở / quyết định cần duyệt
 
 1. Java target `21` LTS và package `com.echoesofmars.lab` đã được chấp thuận.
-2. CORE-01 cần được củng cố trong G2 để phân biệt FQCN/classpath với file path; chưa đủ bằng chứng L2.
-3. Maven chỉ được đề xuất sau raw `javac` smoke slice đầu tiên.
-4. Corpus có 0 verified answer; câu dùng để dạy phải fact-check trước.
-5. Chưa cấu hình Git remote.
+2. G2-A đang chờ learner attempt; Hint 3 chưa dùng.
+3. CORE-01 cần được củng cố trong G2 để phân biệt FQCN/classpath với file path; chưa đủ bằng chứng L2.
+4. Maven chỉ được đề xuất sau các raw `javac` slices đầu tiên.
+5. Corpus có 0 verified answer; câu dùng để dạy phải fact-check trước.
+6. Chưa cấu hình Git remote.
 
 ## Hành động tiếp theo
 
 - **ChatGPT:** CORE-01 feedback đã đồng bộ; lần sau kiểm tra giải thích độc lập để cân nhắc L2, không lặp nguyên đáp án.
-- **Codex:** Preview G2 menu/input theo lesson protocol; chưa thêm Spring/Maven/database.
-- **Người học:** Trả lời câu FQCN để đánh giá theory CORE-01, hoặc bắt đầu prediction/task G2.
+- **Codex:** Chờ learner attempt G2-A, sau đó review/run two-case gate; chưa thêm Spring/Maven/database.
+- **Người học:** Đọc `docs/learning/exercises/G2A_CONSOLE_INPUT.md`, trả lời prediction và sửa đúng một Java file.
 
 ## Tệp cần gửi cho ChatGPT
 
