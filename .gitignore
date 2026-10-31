@@ -1,0 +1,29 @@
+# Java compiler and build output
+*.class
+out/
+target/
+build/
+.gradle/
+
+# IDE and editor state
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# Private learning corpus and audit exports
+# These folders contain user-supplied/private material and must not be published.
+/private_question_bank/
+/reference/

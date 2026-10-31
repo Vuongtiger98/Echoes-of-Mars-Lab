@@ -1,0 +1,7 @@
+# Add these lines to your existing .gitignore as appropriate; do not replace the whole file.
+/data/private-question-bank/
+/private_question_bank/
+/reference/private/
+.env
+.env.*
+!.env.example
