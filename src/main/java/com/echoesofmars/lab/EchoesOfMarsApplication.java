@@ -15,15 +15,6 @@ public class EchoesOfMarsApplication {
      * @param args các argument được truyền từ command line; G1 chưa sử dụng
      */
     public static void main(String[] args) {
-        // TODO: In chính xác dòng: Echoes of Mars Learning Lab
-
-        // HINT 1 — ĐỊNH HƯỚNG:
-        // Dùng standard output để gửi một String ra terminal.
-
-        // HINT 2 — PSEUDOCODE:
-        // gọi method in một dòng và truyền nội dung cần hiển thị
-
-        // SYNTAX EXAMPLE (nội dung khác bài tập):
-        // System.out.println("Habitat online");
+        System.out.println("Echoes of Mars Learning Lab");
     }
 }
