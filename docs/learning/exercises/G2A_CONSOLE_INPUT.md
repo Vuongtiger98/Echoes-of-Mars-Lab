@@ -87,4 +87,3 @@ javac --release 21 -encoding UTF-8 -d out src/main/java/com/echoesofmars/lab/Ech
 ```
 
 Codex sẽ chạy thêm case `hello`, exact-output check và `git diff --check` khi review.
-

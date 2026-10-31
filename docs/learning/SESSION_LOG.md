@@ -101,3 +101,10 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Không có; chờ learner attempt. Hint 3 chưa dùng.
 - **Theory/coding changes:** Không đổi level khi mới giao bài.
 - **Next session action:** Người học sửa một file theo acceptance; Codex review diff và chạy hai input cases.
+
+## 2026-11-01 / PROCESS-GATE-008 (CORRECTION)
+
+- **Objective:** Sửa hygiene của exercise checkpoint G2-A.
+- **Evidence:** `git diff --cached --check` đã báo `new blank line at EOF`, nhưng command ghép tiếp tục chạy commit `434c903` thay vì dừng.
+- **Correction:** Xóa dòng trống thừa; từ gate sau dùng điều kiện chặn commit khi diff check khác 0.
+- **Learning levels:** Không thay đổi; đây là lỗi quy trình của Codex, không phải lỗi learner.
