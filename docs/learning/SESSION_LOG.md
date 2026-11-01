@@ -141,3 +141,15 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Mâu thuẫn cũ đặt Maven/JUnit ở G7 sau simulation/persistence đã được sửa; không xóa capability nào khỏi roadmap.
 - **Theory/coding changes:** Không đổi level và không đánh dấu feature mới hoàn thành.
 - **Next session action:** G2-A tiếp tục `ASSIGNED`; chờ learner attempt. Khi G2-A kết thúc, tạo handoff và prerequisite G2-B.
+
+## 2026-11-02 / THEORY-G2A-012 (TEACHER_FEEDBACK_SYNC)
+
+- **Objective and concepts:** Đồng bộ G2-A theory preparation về object/reference, String/StringBuilder, Scanner/input, exception, try-with-resources, `parseInt()` và import; chưa bắt đầu coding.
+- **IBM course(s), question UIDs:** IBM 2; `java-086` vẫn là mapping `unreviewed`, feedback không fact-check hoặc sử dụng `answer_raw`.
+- **Learner theory answers:** Dự đoán đúng việc hai reference trỏ tới object khác nhau; phân biệt String/StringBuilder sau sửa sai; phân biệt `scanner.close()` với `scanner = null`; dự đoán đúng resource đóng trước `catch`; hiểu `parseInt()` trả `int` và không đổi String gốc. Nhận biết import cơ bản nhưng cần củng cố import không tải library và FQCN có thể thay thế.
+- **Learner-authored code / AI-authored code:** Không có code mới; source checkpoint được review vẫn là `6eabcc2`.
+- **Files changed and reason:** Chỉ `PROGRESS.md` và append `SESSION_LOG.md`; theo yêu cầu chưa tạo handoff mới trước khi kết thúc buổi G2-A.
+- **Commands actually executed and results:** Không compile/run/test vì Java source chưa đổi và learner chưa attempt G2-A.
+- **Mistakes, fixes, and new questions:** Tiếp tục củng cố reference khác object; `close()` khác `null`; mutability khác scope/lifecycle; import khác tải library; String concatenation khác phép cộng số.
+- **Theory/coding changes:** CORE-01 giữ L1/L1. CORE-02 theory L0 → L2, coding giữ L0. Tách JAVA-04A exception/try-with-resources và ghi theory L2/coding L0; JAVA-04B validation/file I/O giữ L0/L0. Scanner/input ghi coverage đã tiếp cận nhưng CORE-03 giữ L0/L0 vì chưa có level recommendation hoặc coding evidence.
+- **Next session action:** Người học tự code G2-A trước. Codex review learner diff, ghi hint level và chạy acceptance với input `2` và `hello`; chỉ tạo handoff mới sau khi buổi thực hành kết thúc.
