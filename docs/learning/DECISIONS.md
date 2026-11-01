@@ -34,3 +34,8 @@
 **Status:** Accepted by user on 2026-11-01.
 **Decision:** Dùng JDK 25.0.3 hiện có để compile với target `--release 21`; package gốc là `com.echoesofmars.lab`.
 **Consequence:** Code chỉ dùng Java API/language level phù hợp Java 21. G1 phải chứng minh lệnh raw `javac --release 21` trước khi đưa Maven vào.
+
+## ADR-008: Maven và JUnit trước simulation/persistence
+**Status:** Accepted through Teacher Review on 2026-11-02.
+**Decision:** Hoàn thành domain slice đầu tiên ở G3 bằng raw `javac`, sau đó đưa Maven + JUnit 5 vào ở G4. Resource/crew chuyển thành G5, simulation thành G6 và file persistence thành G7.
+**Consequence:** Người học vẫn thấy compile/classpath trực tiếp trước build tool, nhưng mọi rule phức tạp và persistence sau đó có automated regression tests bảo vệ. Việc duyệt thứ tự không đồng nghĩa Maven/JUnit đã được cài hoặc triển khai.

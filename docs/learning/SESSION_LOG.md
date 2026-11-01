@@ -129,3 +129,15 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Làm rõ `Scanner.close()` cũng đóng `System.in`; G2-A đóng ở cuối chương trình, G2-B/C tái sử dụng một scanner. Day 1 vẫn chưa bắt đầu vì người học chưa xác nhận.
 - **Theory/coding changes:** Không đổi level. CORE-01 giữ L1/L1; CORE-02/CORE-03 giữ L0/L0.
 - **Next session action:** Chờ learner trả lời ba prediction và tự code G2-A. Sau phiên thực hành, cung cấp prerequisite G2-B cho Office Study Mode.
+
+## 2026-11-02 / ROADMAP-ORDER-011 (TEACHER_REVIEW_SYNC)
+
+- **Objective and concepts:** Tiếp nhận Teacher Review phê duyệt G2-A/hybrid modes và sửa mâu thuẫn thứ tự Maven/JUnit trong roadmap; không sửa Java source.
+- **IBM course(s), question UIDs:** Giữ toàn bộ IBM 1–14 và 386 UID; không dùng câu hỏi hoặc đáp án mới trong phiên tài liệu này.
+- **Learner theory answers:** Không có evidence mới. CORE-01 giữ Theory L1/Coding L1; các level khác không đổi.
+- **Learner-authored code / AI-authored code:** Không có Java code mới; Codex chỉ đồng bộ tài liệu.
+- **Files changed and reason:** `ROADMAP.md`, `CHATGPT_ROADMAP_REVIEW.md`, `DECISIONS.md`, `HANDOFF.md`, `SESSION_LOG.md` để thống nhất G3 domain → G4 Maven/JUnit → G5 resource/crew → G6 simulation → G7 file persistence.
+- **Commands actually executed and results:** Dùng `rg` rà các tham chiếu G3–G8, Maven, JUnit, simulation và persistence. Chưa compile/run/test Java vì source không đổi.
+- **Mistakes, fixes, and new questions:** Mâu thuẫn cũ đặt Maven/JUnit ở G7 sau simulation/persistence đã được sửa; không xóa capability nào khỏi roadmap.
+- **Theory/coding changes:** Không đổi level và không đánh dấu feature mới hoàn thành.
+- **Next session action:** G2-A tiếp tục `ASSIGNED`; chờ learner attempt. Khi G2-A kết thúc, tạo handoff và prerequisite G2-B.

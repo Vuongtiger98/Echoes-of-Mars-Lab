@@ -29,6 +29,7 @@
 - Reconcile feedback checkpoint `6eabcc2`: chấp nhận G1/pedagogy guidance; không hạ CORE-01 theory L1 vì feedback trực tiếp mới hơn đã được sync tại `627764a`.
 - ChatGPT duyệt roadmap hybrid 7 ngày ngày 2026-11-02; giữ đủ 14 IBM modules/386 questions và ba trục theory coverage/theory level/coding level.
 - Tích hợp Office Study Mode/Home Coding Mode; G2-A/B/C là thứ tự tiếp theo; không sửa Java source khi đồng bộ kế hoạch.
+- Teacher Review duyệt G2-A và phát hiện mâu thuẫn thứ tự build tool; roadmap đã thống nhất G3 domain → G4 Maven/JUnit → G5 resource/crew → G6 simulation → G7 file persistence.
 
 ## Người học đã chứng minh điều gì?
 
@@ -41,7 +42,7 @@
 1. Java target `21` LTS và package `com.echoesofmars.lab` đã được chấp thuận.
 2. G2-A đang chờ learner attempt; Hint 3 chưa dùng.
 3. CORE-01 cần được củng cố trong G2 để phân biệt FQCN/classpath với file path; chưa đủ bằng chứng L2.
-4. Maven chỉ được đề xuất sau các raw `javac` slices đầu tiên.
+4. Maven + JUnit đã được duyệt ở G4, ngay sau domain slice đầu tiên G3 và trước resource/crew phức tạp, simulation và persistence; chưa được triển khai.
 5. Corpus có 0 verified answer; câu dùng để dạy phải fact-check trước.
 6. Git remote public đã cấu hình và local/remote `main` đồng bộ tại lần audit gần nhất; mỗi phiên vẫn phải kiểm tra lại trước khi tuyên bố sync.
 7. Khi feedback dùng snapshot cũ, giữ chronology trong `SESSION_LOG.md`; không ghi đè evidence mới hơn.

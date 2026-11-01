@@ -43,17 +43,17 @@ web UI ──────────┘              │                       
 
 ### Build evolution đề xuất
 
-1. First slice dùng `javac --release <target>` để người học thấy compile/classpath trực tiếp.
-2. Sau CLI smoke behavior đầu tiên và checkpoint Git, xin duyệt đưa Maven + JUnit 5 vào.
+1. G1–G3 dùng `javac --release <target>` để người học thấy compile/classpath trực tiếp và hoàn thành domain slice đầu tiên.
+2. Sau checkpoint G3, G4 đưa Maven + JUnit 5 vào trước resource/crew phức tạp, simulation engine và persistence.
 3. Spring Boot quản lý bằng Maven khi tới P5; database/container dependencies chỉ thêm ở phase tương ứng.
 
 | Phase | Target capability | Ví dụ tình huống trên Sao Hỏa | Tech/IBM |
 |---|---|---|---|
 | P0 | Baseline reproducible | Chạy lại trạng thái console hiện có và ghi đúng input/output | IBM 1–4 |
 | P1 | Clean Java domain, test seams | Tách nhập/xuất console khỏi logic tài nguyên, phi hành đoàn | IBM 2–4, 10 |
-| P2 | Simulation engine có quy tắc | Bước thời gian, tiêu thụ/khôi phục tài nguyên, trạng thái crew, sự kiện rủi ro | IBM 3–4, 10 |
-| P3 | Persistence + test | Save/load mission, bất biến nghiệp vụ, test có dữ liệu cố định | IBM 4, 8, 10 |
-| P4 | Version control, modular build | Git, dependency management, CI tối thiểu, cách chạy tái lập | IBM 6, 9–10 |
+| P2 | Modular build + automated test | Maven, JUnit, dependency management và regression suite cho domain đầu tiên | IBM 6, 10 |
+| P3 | Simulation engine có quy tắc | Bước thời gian, tiêu thụ/khôi phục tài nguyên, trạng thái crew, sự kiện rủi ro | IBM 3–4, 10 |
+| P4 | File persistence + test | Save/load mission, bất biến nghiệp vụ, test có dữ liệu cố định | IBM 4, 8, 10 |
 | P5 | Spring Boot REST | GET trạng thái habitat, POST action, validation + HTTP errors | IBM 7 |
 | P6 | Relational persistence | PostgreSQL/JDBC/JPA, schema, transaction, concurrency | IBM 8 |
 | P7 | Production-grade | Auth/roles, metrics, logs, idempotency, Docker, CI/CD, deployments | IBM 7, 9–11 |
@@ -80,10 +80,11 @@ cli-adapter (console)    rest-adapter (Spring, sau này)    ui (tùy chọn)
 
 - P1-A: Ghi smoke test của menu và vài thao tác tài nguyên; đưa input/output sang abstraction nhỏ để test.
 - P1-B: Có quy tắc giới hạn tài nguyên, kiểm tra validation và trách nhiệm state ownership.
-- P2-A: Thêm `nextSol()` (ngày Sao Hỏa) khi đã test được cập nhật crew/resources; xác định cách xử lý thiếu oxy/nước.
-- P2-B: Event mô phỏng và nhật ký sự kiện; yêu cầu đầu vào ổn định và random seed kiểm chứng được.
-- P3-A: Save/load một snapshot JSON hoặc CSV bằng Java I/O; phải bảo đảm không làm mất file cũ.
-- P4+ tiếp tục khi người học muốn tiến lên và source có kiểm thử tối thiểu.
+- P2-A: Thêm Maven + JUnit 5 và chuyển rule domain đầu tiên thành automated regression test.
+- P3-A: Thêm `nextSol()` (ngày Sao Hỏa) khi đã test được cập nhật crew/resources; xác định cách xử lý thiếu oxy/nước.
+- P3-B: Event mô phỏng và nhật ký sự kiện; yêu cầu đầu vào ổn định và random seed kiểm chứng được.
+- P4-A: Save/load một snapshot JSON hoặc CSV bằng Java I/O; phải bảo đảm không làm mất file cũ.
+- P5+ tiếp tục khi người học muốn tiến lên và source có kiểm thử tối thiểu.
 
 ## Greenfield sequence đề xuất (mỗi bước phải có gate)
 
@@ -93,10 +94,10 @@ cli-adapter (console)    rest-adapter (Spring, sau này)    ui (tùy chọn)
 | G1 | Một Java entry point có package | In tên Learning Lab và thoát, compile bằng `javac` | Tự viết/chỉnh `main` và dự đoán output |
 | G2 | Menu loop + input validation | Input hợp lệ/không hợp lệ không crash | Tự triển khai một nhánh menu |
 | G3 | Domain đầu tiên: mission identity/state | Rule thuần Java, chưa I/O | Tự viết constructor/validation |
-| G4 | Resource + crew vertical slice | Một action làm state đổi có thể dự đoán | Collections, encapsulation, test cases |
-| G5 | Simulation clock/events | Advance sol deterministic; seeded event | Interface, strategy, random seam |
-| G6 | File persistence | Save/load round-trip không mất dữ liệu | File I/O, exception, serialization format |
-| G7 | Maven + automated tests | Reproducible build, JUnit regression suite | Viết test trước cho một rule |
+| G4 | Maven + automated tests | Reproducible build, JUnit regression suite cho G3 | Viết test trước cho một rule mới |
+| G5 | Resource + crew vertical slice | Một action làm state đổi có thể dự đoán và có regression test | Collections, encapsulation, test cases |
+| G6 | Simulation clock/events | Advance sol deterministic; seeded event | Interface, strategy, random seam |
+| G7 | File persistence | Save/load round-trip không mất dữ liệu | File I/O, exception, serialization format |
 | G8 | Spring REST | CLI và REST dùng chung application/domain | Controller/DTO/validation |
 | G9 | SQL/JPA/PostgreSQL | Repository adapter + transaction test | Schema/query/ORM mapping |
 | G10 | Production/capstone/AI | Docker/CI/metrics/security/UI/AI demo | Debug, trade-off, interview explanation |
@@ -107,7 +108,7 @@ cli-adapter (console)    rest-adapter (Spring, sau này)    ui (tùy chọn)
 - **G2-B:** parse lựa chọn, `switch` và `default`; chưa cần menu loop hoàn chỉnh.
 - **G2-C:** vòng lặp menu, invalid input không crash, thoát an toàn và tách method.
 
-Maven + JUnit 5 được đề xuất sau domain slice đầu tiên và trước khi simulation engine/persistence tăng kích thước. Simulation phải có clock/random seam kiểm soát được. Domain tiếp tục độc lập với Spring/JPA.
+Thứ tự đã thống nhất là G3 domain đầu tiên → G4 Maven/JUnit → G5 resource/crew → G6 simulation → G7 file persistence. Simulation phải có clock/random seam kiểm soát được. Domain tiếp tục độc lập với Spring/JPA.
 
 G0–G10 không thay P0–P9; đây là thứ tự triển khai nhỏ hơn. Mọi chủ đề chưa tới vẫn nằm trong backlog, không bị cắt.
 
@@ -120,8 +121,8 @@ G0–G10 không thay P0–P9; đây là thứ tự triển khai nhỏ hơn. Mọ
 | Ngày | Office Study Mode | Home Coding Mode | Gate mục tiêu |
 |---|---|---|---|
 | 1 | IBM 1, 2, 6; Java `001–040`; fundamentals, FQCN/classpath, input/control flow, Git | G2-A/B/C | Menu/input chạy được; invalid input không crash ở G2-C |
-| 2 | IBM 3–4; Java `041–080`; OOP, collections, exception | Mission identity/state, resource và crew slice | Rule thuần Java có invariant và state change dự đoán được |
-| 3 | IBM 4, 10; Java `081–121`; Backend `001–015`; I/O, test, JVM/concurrency overview | Deterministic action/event engine; Maven/JUnit; file persistence nhỏ | Automated tests và save/load round trip; event có seed ổn định |
+| 2 | IBM 3–4; Java `041–080`; OOP, collections, exception; preview JUnit prerequisite | G3 mission domain → G4 Maven/JUnit → bắt đầu G5 resource/crew | Domain có invariant; Maven build và regression test chạy được |
+| 3 | IBM 4, 10; Java `081–121`; Backend `001–015`; I/O, test, JVM/concurrency overview | Hoàn tất G5; G6 deterministic simulation; G7 file persistence nhỏ | Automated tests, save/load round trip và seeded event ổn định |
 | 4 | IBM 5, 7; Backend `016–060`; HTTP/REST, Spring, HTML/JS | Spring Boot REST và dashboard tối thiểu dùng lại domain | State/action endpoint; validation/error response |
 | 5 | IBM 8; Backend `061–104`; Database `001–010`; SQL/JPA | PostgreSQL, migration, JPA adapter, transaction đầu tiên | Schema tái lập; repository integration test |
 | 6 | IBM 9–10; Database `011–085`; testing, security, Docker, CI | Security boundary, test suite, logs/health, Docker/CI | Build/test tự động; container start; không chứa secret |

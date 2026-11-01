@@ -168,8 +168,8 @@ Các dải UID dưới đây dùng để triage/coverage; câu được dùng đ
 | Ngày | Lý thuyết ban ngày | Coding buổi tối | Gate kỹ thuật mục tiêu |
 |---|---|---|---|
 | 1 | IBM 1, 2, 6; Java `001–040`; FQCN/classpath, input, control flow, Git | G2-A/B/C: menu, input, validation, loop | Hai hoặc nhiều input case chạy đúng; invalid input không crash |
-| 2 | IBM 3–4; Java `041–080`; OOP, collections, exception | Mission identity/state, resource và crew slice đầu tiên | Rule thuần Java có invariant và output có thể dự đoán |
-| 3 | IBM 4, 10; Java `081–121`; Backend `001–015`; I/O, test, JVM/concurrency overview | Action/event engine deterministic; Maven + JUnit; file save/load nhỏ | Automated tests pass; save/load round trip; seeded event ổn định |
+| 2 | IBM 3–4; Java `041–080`; OOP, collections, exception; preview JUnit prerequisite | Mission domain đầu tiên → Maven/JUnit → bắt đầu resource/crew | Domain có invariant; Maven build và regression test chạy được |
+| 3 | IBM 4, 10; Java `081–121`; Backend `001–015`; I/O, test, JVM/concurrency overview | Hoàn tất resource/crew → deterministic simulation → file save/load nhỏ | Automated tests pass; save/load round trip; seeded event ổn định |
 | 4 | IBM 5, 7; Backend `016–060`; HTTP, REST, Spring, HTML/JS | Spring Boot REST dùng lại domain/application; dashboard tối thiểu | Endpoint đọc state và thực hiện action; validation/error response |
 | 5 | IBM 8; Backend `061–104`; Database `001–010`; SQL/JPA basics | PostgreSQL, migration, JPA adapter và transaction đầu tiên | Schema tái lập; repository integration test; dữ liệu sống qua restart |
 | 6 | IBM 9–10; Database `011–085`; testing, security, Docker, CI | Auth boundary, test suite, logging/health, Docker và CI | Build/test tự động; container start được; không chứa secret |
