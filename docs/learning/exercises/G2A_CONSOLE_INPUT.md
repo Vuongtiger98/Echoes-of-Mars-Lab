@@ -16,6 +16,18 @@
 
 IBM mapping: Course 2. Question-bank mapping: `java-086` chỉ dùng làm recall về resource management; trạng thái `unreviewed`, không dùng `answer_raw` làm đáp án chuẩn.
 
+## Trạng thái và prerequisite
+
+- Trạng thái: `ASSIGNED`; chưa có learner attempt, Hint 3 chưa dùng.
+- Có thể bắt đầu G2-A trước khi hoàn thành toàn bộ theory coverage của Day 1.
+- Trước khi code, cần nhận biết `import`, object/`new`, `System.in`, local variable `String`, `nextLine()` và try-with-resources. Không yêu cầu đã đạt Theory L2 cho tất cả mục này.
+
+### Vòng đời của standard input
+
+`Scanner` trong bài này bọc `System.in`. Khi gọi `Scanner.close()`, scanner cũng đóng `System.in`; chương trình không thể tiếp tục tạo scanner mới để đọc lại standard input một cách an toàn.
+
+G2-A chỉ đọc một lần và kết thúc `main`, nên scanner được đóng khi rời try-with-resources ở cuối phiên đọc. Khi chuyển sang menu nhiều lượt ở G2-B/G2-C, chương trình phải tái sử dụng một scanner cho toàn bộ phiên console, không đóng rồi mở lại scanner sau mỗi lựa chọn.
+
 ## File được phép sửa
 
 `src/main/java/com/echoesofmars/lab/EchoesOfMarsApplication.java`
@@ -56,6 +68,7 @@ Với input `hello`, dòng cuối phải là `You selected: hello`. G2-A cố ý
 
 1. Nếu nhập `hello`, local variable sẽ chứa giá trị nào?
 2. Class vẫn được chạy bằng fully qualified name nào?
+3. Khi rời try-with-resources, việc đóng `Scanner` ảnh hưởng thế nào tới `System.in`?
 
 ## Hint ladder
 

@@ -117,3 +117,15 @@ Next session action:
 - **Resolution:** Không downgrade theory L1. Giữ ghi chú misconception FQCN/file path và yêu cầu evidence độc lập trước L2. `java-055` vẫn `unreviewed`.
 - **Source/build changes:** Không sửa Java; không chạy lại build/test vì G1 technical evidence không thay đổi.
 - **Next session action:** G2-A vẫn `ASSIGNED`; chờ learner prediction và code attempt.
+
+## 2026-11-02 / HYBRID-ROADMAP-010 (APPROVED_AND_SYNCED)
+
+- **Objective and concepts:** Tiếp nhận ChatGPT review và tích hợp roadmap 7 ngày, Office Study Mode, Home Coding Mode, ba trục tiến độ và Git checkpoint workflow; không sửa Java source.
+- **IBM course(s), question UIDs:** Giữ đủ IBM 1–14 và 386 UID trong scope. Các dải UID theo ngày chỉ là coverage target; `java-055`/`java-086` vẫn `unreviewed`, không dùng `answer_raw`.
+- **Learner theory answers:** Không có bài kiểm tra mới; đây là quyết định phối hợp, không phải evidence mastery.
+- **Learner-authored code / AI-authored code:** Không có Java code mới. Codex chỉ cập nhật tài liệu theo review được người học chuyển giao.
+- **Files changed and reason:** `AGENTS.md`, `START_HERE.md`, `PROGRESS.md`, `LESSON_PROTOCOL.md`, `ROADMAP.md`, `G2A_CONSOLE_INPUT.md`, `HANDOFF.md`, `SESSION_LOG.md` và file review để đồng bộ hai learning mode, roadmap và standard-input lifecycle.
+- **Commands actually executed and results:** Đọc source-of-truth learning docs, kiểm tra Git status/log và xác nhận private question bank tiếp tục bị `.gitignore` chặn. Chưa compile/run vì source Java không đổi.
+- **Mistakes, fixes, and new questions:** Làm rõ `Scanner.close()` cũng đóng `System.in`; G2-A đóng ở cuối chương trình, G2-B/C tái sử dụng một scanner. Day 1 vẫn chưa bắt đầu vì người học chưa xác nhận.
+- **Theory/coding changes:** Không đổi level. CORE-01 giữ L1/L1; CORE-02/CORE-03 giữ L0/L0.
+- **Next session action:** Chờ learner trả lời ba prediction và tự code G2-A. Sau phiên thực hành, cung cấp prerequisite G2-B cho Office Study Mode.

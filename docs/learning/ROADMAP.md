@@ -101,10 +101,30 @@ cli-adapter (console)    rest-adapter (Spring, sau này)    ui (tùy chọn)
 | G9 | SQL/JPA/PostgreSQL | Repository adapter + transaction test | Schema/query/ORM mapping |
 | G10 | Production/capstone/AI | Docker/CI/metrics/security/UI/AI demo | Debug, trade-off, interview explanation |
 
+### Thứ tự G2 đã được duyệt
+
+- **G2-A:** menu tĩnh, một lần đọc `String` bằng `Scanner`, xác nhận input và kết thúc.
+- **G2-B:** parse lựa chọn, `switch` và `default`; chưa cần menu loop hoàn chỉnh.
+- **G2-C:** vòng lặp menu, invalid input không crash, thoát an toàn và tách method.
+
+Maven + JUnit 5 được đề xuất sau domain slice đầu tiên và trước khi simulation engine/persistence tăng kích thước. Simulation phải có clock/random seam kiểm soát được. Domain tiếp tục độc lập với Spring/JPA.
+
 G0–G10 không thay P0–P9; đây là thứ tự triển khai nhỏ hơn. Mọi chủ đề chưa tới vẫn nằm trong backlog, không bị cắt.
 
 **Nguyên tắc tiến độ:** roadmap mở rộng không bị xóa. Công việc tiếp theo được chọn theo prerequisite và bằng chứng kỹ năng; một vertical slice phải build/run/test trước khi tiếp.
 
-## Thử thách 7 ngày (bề rộng giữ nguyên)
+## Thử thách 7 ngày đã được duyệt (bề rộng giữ nguyên)
 
-Ngày 1: fundamentals, audit; Ngày 2: OOP & collections; Ngày 3: advanced Java, concurrency, I/O; Ngày 4: API & Spring; Ngày 5: persistence, SQL, JPA; Ngày 6: testing, Git, Docker, cloud-native; Ngày 7: integration, frontend/AI survey, review và phỏng vấn. **Tất cả 14 module IBM vẫn trong coverage map**; không hiểu nhầm "tiếp cận" là hoàn tất đủ giờ/chứng chỉ. Tiến theo năng lực; nếu không kịp, giữ lại và ghi cụ thể những phần chưa đạt.
+**Ngày bắt đầu:** Chưa xác nhận; vẫn là Day 0. Không tự đặt Day 1 dựa trên ngày calendar.
+
+| Ngày | Office Study Mode | Home Coding Mode | Gate mục tiêu |
+|---|---|---|---|
+| 1 | IBM 1, 2, 6; Java `001–040`; fundamentals, FQCN/classpath, input/control flow, Git | G2-A/B/C | Menu/input chạy được; invalid input không crash ở G2-C |
+| 2 | IBM 3–4; Java `041–080`; OOP, collections, exception | Mission identity/state, resource và crew slice | Rule thuần Java có invariant và state change dự đoán được |
+| 3 | IBM 4, 10; Java `081–121`; Backend `001–015`; I/O, test, JVM/concurrency overview | Deterministic action/event engine; Maven/JUnit; file persistence nhỏ | Automated tests và save/load round trip; event có seed ổn định |
+| 4 | IBM 5, 7; Backend `016–060`; HTTP/REST, Spring, HTML/JS | Spring Boot REST và dashboard tối thiểu dùng lại domain | State/action endpoint; validation/error response |
+| 5 | IBM 8; Backend `061–104`; Database `001–010`; SQL/JPA | PostgreSQL, migration, JPA adapter, transaction đầu tiên | Schema tái lập; repository integration test |
+| 6 | IBM 9–10; Database `011–085`; testing, security, Docker, CI | Security boundary, test suite, logs/health, Docker/CI | Build/test tự động; container start; không chứa secret |
+| 7 | IBM 11–14; Database `086–161`; capstone, cloud, AI, interview | End-to-end demo, deployment attempt, AI boundary, docs/refactor | Demo tái hiện được; pass/fail/chưa làm được ghi trung thực |
+
+Các dải UID là mục tiêu **theory coverage**, không phải mặc định đã fact-check, đã hiểu hoặc đã nhớ. Tất cả 14 học phần IBM và 386 câu vẫn trong scope. Nếu không hoàn thành trong ngày dự kiến, giữ phần còn lại trong backlog có trạng thái rõ ràng; không xoá phạm vi và không tuyên bố mastery.

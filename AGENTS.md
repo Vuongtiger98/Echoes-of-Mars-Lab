@@ -12,6 +12,14 @@ Người dùng học Java cho Backend trong thử thách 7 ngày; mục tiêu ba
 - Codex: đọc và giải thích code, cùng người dùng viết/sửa code, chạy build/test, debug, tổ chức module, cập nhật tài liệu tiến độ và bàn giao.
 - Người dùng: chọn mục tiêu, thực hành và chấp thuận các sửa đổi kiến trúc lớn.
 
+## Hai chế độ học đã được duyệt
+
+- **Office Study Mode:** ChatGPT/Microsoft Copilot dạy và kiểm tra lý thuyết ban ngày. Kết quả phải phân biệt `theory coverage` với `theory level`, ghi UID đã dùng, trạng thái fact-check và bằng chứng từ câu trả lời thật của người học.
+- **Home Coding Mode:** Codex hướng dẫn coding buổi tối trên source hiện tại. Người học được dự đoán và tự code trước; Codex review, debug, chạy acceptance test và ghi riêng `coding level`.
+- Không cần chờ hoàn tất toàn bộ lý thuyết của một ngày mới được coding. Chỉ yêu cầu prerequisite tối thiểu của vertical slice hiện tại.
+- `HANDOFF.md` là snapshot trao đổi giữa hai mode. Git commit là checkpoint có thể kiểm chứng; không thay thế evidence về mức hiểu.
+- Challenge Day 1 chỉ bắt đầu khi người học xác nhận, không suy ra từ ngày calendar hoặc số phiên.
+
 ## Chế độ học (mặc định)
 
 1. Trước mỗi bài coding, nêu bài toán, kỹ năng liên quan, tiêu chí đạt, và câu hỏi dự đoán trước khi chạy.
@@ -36,6 +44,7 @@ Người dùng học Java cho Backend trong thử thách 7 ngày; mục tiêu ba
 - `fact_check_status=unreviewed` **không phải** verified. `needs_review` là cờ cảnh báo, không phải phán quyết câu sai. Ưu tiên docs Oracle/JLS, IBM outline, Spring, IETF, PostgreSQL và kiểm thử code khi có thể.
 - IBM public outline dùng để xây mục tiêu kỹ năng; không sao chép nội dung trả phí hoặc tuyên bố đã hoàn thành chứng chỉ.
 - Không đưa secrets, cookie, API key hoặc token vào code, commit, handoff hoặc log.
+- Repository GitHub là public. Không commit `answer_raw`, bản sao nội dung trả phí, dữ liệu cá nhân hoặc feedback riêng tư chưa được người học cho phép công khai.
 
 ## Cổng chất lượng
 

@@ -1,8 +1,20 @@
 # PROGRESS | Nhật ký thành thạo có bằng chứng
 
-**Trạng thái:** G0/G1 hoàn thành kỹ thuật. `TEACHER_FEEDBACK` CORE-01 ngày 2026-11-01 đã đồng bộ: theory L1, coding L1. G2 sẵn sàng.
+**Trạng thái:** G0/G1 hoàn thành kỹ thuật. `TEACHER_FEEDBACK` CORE-01 ngày 2026-11-01 đã đồng bộ: theory L1, coding L1. Roadmap hybrid 7 ngày được duyệt ngày 2026-11-02. G2-A đang `ASSIGNED`; chưa có learner attempt. Challenge vẫn là Day 0 cho tới khi người học xác nhận Day 1.
 
 **Evidence boundary:** Việc người dùng chọn kiến trúc greenfield chứng minh quyết định dự án, không chứng minh mastery Java. Không nâng theory/coding level trong phiên audit.
+
+## Ba trục theo dõi độc lập
+
+- **Theory coverage:** CORE-01 đã được học/kiểm tra một phần; prerequisite G2-A đã được xếp hàng cho Office Study Mode. Coverage không tự nâng level.
+- **Theory level:** chỉ cập nhật từ `TEACHER_FEEDBACK` có câu trả lời thật và checkpoint rõ ràng.
+- **Coding level:** chỉ cập nhật từ phần người học tự viết/debug và lệnh kiểm chứng thực sự chạy trong Home Coding Mode.
+
+### Hàng đợi gần nhất
+
+- **Office Study Mode:** củng cố FQCN/classpath; học `import`, `new`, constructor/object, `Scanner`, `System.in`, `String`, `nextLine()` và vòng đời standard input.
+- **Home Coding Mode:** hoàn thành G2-A theo `exercises/G2A_CONSOLE_INPUT.md`; Hint 3 chưa dùng.
+- **Sau G2-A:** Codex cung cấp prerequisite G2-B về parse số, `switch`, `default` và invalid input cho ChatGPT xây bài tiếp theo.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |
 |---|---|---|---|---|---|---|---|

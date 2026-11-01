@@ -22,6 +22,30 @@ Các file trong `docs/learning/` là **bản ghi chính thức trong repository*
 4. **Codex**: cập nhật `PROGRESS.md` + `SESSION_LOG.md`, tạo `HANDOFF.md` mới, báo rõ file đã đổi và lệnh đã chạy.
 5. **Người dùng**: đưa `HANDOFF.md` cập nhật cho ChatGPT ở phiên kế tiếp; nếu cần review code sâu, đính kèm code/diff.
 
+## Office Study Mode và Home Coding Mode
+
+### Office Study Mode — ban ngày
+
+1. Mở `HANDOFF.md` để lấy đúng commit, feature và misconception hiện tại.
+2. ChatGPT/Microsoft Copilot dạy prerequisite gần nhất và có thể giới thiệu trước các chủ đề trong roadmap.
+3. Mỗi UID được dùng phải ghi `verified`, `needs_review` hoặc `unreviewed`; UID trong lịch coverage không phải bằng chứng đã hiểu.
+4. Kết thúc bằng `TEACHER_FEEDBACK`: câu trả lời thật của người học, theory coverage, theory level, phần còn nhầm và transfer task cho buổi tối.
+
+### Home Coding Mode — buổi tối
+
+1. Codex đọc `HANDOFF.md`, feedback mới nhất và source ở đúng Git checkpoint.
+2. Chọn một vertical slice nhỏ; không cần đợi học xong toàn bộ theory của ngày nếu prerequisite tối thiểu đã đủ để thử.
+3. Người học dự đoán và tự code trước. Codex dùng hint ladder, review và chạy acceptance test thật.
+4. Kết thúc bằng Git checkpoint và snapshot `HANDOFF.md` mới. Theory level và coding level vẫn được đánh giá độc lập.
+
+### Ba trục không được gộp
+
+- **Theory coverage:** chủ đề/câu hỏi đã được tiếp cận; không đồng nghĩa đã nhớ hoặc hiểu.
+- **Theory level:** khả năng tự giải thích, phân biệt và dự đoán dựa trên câu trả lời thật.
+- **Coding level:** khả năng tự viết, sửa, debug và kiểm chứng code.
+
+Challenge Day 1 chỉ được ghi khi người học xác nhận bắt đầu. Việc chuẩn bị tài liệu, audit hoặc đồng bộ roadmap vẫn thuộc Day 0.
+
 ## Quy tắc đánh giá mức hiểu
 
 - `L0 — Chưa được đánh giá`: có thể đã gặp chủ đề nhưng chưa có bằng chứng kiểm tra.
@@ -43,3 +67,4 @@ Một chủ đề có thể có `theory_level=L3` và `coding_level=L1` (hoặc 
 - `HANDOFF.md` không chứa secrets, đáp án VIP nguyên văn hay dữ liệu cá nhân.
 - Nếu không có GitHub connector: người dùng gửi nội dung `HANDOFF.md` và tùy lúc `PROGRESS.md` cho ChatGPT; kết quả ChatGPT phản hồi được chuyển lại Codex.
 - Nếu dùng GitHub riêng tư và có kết nối phù hợp: có thể đọc cùng repo, nhưng xác minh quyền truy cập từng phiên, không giả định cập nhật real-time.
+- Repository hiện là GitHub public. Chỉ chia sẻ snapshot đã được làm sạch; không commit ngân hàng câu hỏi private, đáp án raw, secrets, dữ liệu cá nhân hoặc feedback riêng tư chưa được phép công khai.
