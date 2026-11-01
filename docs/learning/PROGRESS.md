@@ -13,7 +13,7 @@
 ### Hàng đợi gần nhất
 
 - **Office Study Mode:** G2-A preparation đã hoàn tất; tiếp tục củng cố FQCN/classpath, reference khác object, `close()` khác gán `null`, mutability khác scope/lifecycle, `import` không tải library và nối String khác cộng số.
-- **Home Coding Mode:** hoàn thành G2-A theo `exercises/G2A_CONSOLE_INPUT.md`; Hint 3 chưa dùng.
+- **Home Coding Mode:** hoàn thành G2-A theo `exercises/G2A_CONSOLE_INPUT.md`; Hint 3 đã dùng theo yêu cầu dưới dạng AI-authored helper comments/copy-ready strings, chưa có learner implementation.
 - **Sau G2-A:** Codex cung cấp prerequisite G2-B về parse số, `switch`, `default` và invalid input cho ChatGPT xây bài tiếp theo.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |

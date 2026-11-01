@@ -153,3 +153,15 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Tiếp tục củng cố reference khác object; `close()` khác `null`; mutability khác scope/lifecycle; import khác tải library; String concatenation khác phép cộng số.
 - **Theory/coding changes:** CORE-01 giữ L1/L1. CORE-02 theory L0 → L2, coding giữ L0. Tách JAVA-04A exception/try-with-resources và ghi theory L2/coding L0; JAVA-04B validation/file I/O giữ L0/L0. Scanner/input ghi coverage đã tiếp cận nhưng CORE-03 giữ L0/L0 vì chưa có level recommendation hoặc coding evidence.
 - **Next session action:** Người học tự code G2-A trước. Codex review learner diff, ghi hint level và chạy acceptance với input `2` và `hello`; chỉ tạo handoff mới sau khi buổi thực hành kết thúc.
+
+## 2026-11-02 / CONSOLE-G2A-013 (SCAFFOLD_CHECKPOINT)
+
+- **Objective and concepts:** Thêm helper comments nhắc syntax và String literal copy-ready để giảm thao tác gõ trong G2-A; chưa triển khai hành vi G2-A.
+- **IBM course(s), question UIDs:** IBM 2; không dùng câu hỏi hoặc `answer_raw` mới.
+- **Learner theory answers:** Không có câu trả lời mới trong bước scaffold.
+- **Learner-authored code / AI-authored code:** Codex thêm `import java.util.Scanner` và toàn bộ helper comments. Đây là Hint 3/AI-authored scaffold, không phải learner implementation.
+- **Files changed and reason:** `EchoesOfMarsApplication.java` thêm scaffold không chạy; exercise/progress/session records ghi đúng hint level. Không sửa `HANDOFF.md` trước khi kết thúc G2-A.
+- **Commands actually executed and results:** JDK 21 `javac --release 21` exit 0; Java run exit 0 và vẫn in đúng baseline `Echoes of Mars Learning Lab`; `git diff --check` pass. Chưa chạy G2-A acceptance vì learner implementation chưa tồn tại.
+- **Mistakes, fixes, and new questions:** Helper nhấn mạnh import không tải library, reference khác object, `Scanner.close()` đóng `System.in`, `nextLine()` trả String và `+` nối String.
+- **Theory/coding changes:** Không đổi level; chưa có learner-authored coding evidence.
+- **Next session action:** Người học chuyển phần cần thiết từ comment thành code chạy thật; Codex sau đó review diff và chạy input `2`/`hello`.

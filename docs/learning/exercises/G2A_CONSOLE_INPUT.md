@@ -18,7 +18,7 @@ IBM mapping: Course 2. Question-bank mapping: `java-086` chỉ dùng làm recall
 
 ## Trạng thái và prerequisite
 
-- Trạng thái: `ASSIGNED`; chưa có learner attempt, Hint 3 chưa dùng.
+- Trạng thái: `ASSIGNED`; chưa có learner implementation. Hint 3 được dùng ngày 2026-11-02 theo yêu cầu của người học dưới dạng helper comments và copy-ready String literals trong source; scaffold không được tính là learner-authored code.
 - Có thể bắt đầu G2-A trước khi hoàn thành toàn bộ theory coverage của Day 1.
 - Trước khi code, cần nhận biết `import`, object/`new`, `System.in`, local variable `String`, `nextLine()` và try-with-resources. Không yêu cầu đã đạt Theory L2 cho tất cả mục này.
 
@@ -90,7 +90,7 @@ tự động đóng Scanner khi rời block try
 
 ### Hint 3 — snippet
 
-Chỉ yêu cầu Codex cung cấp nếu đã thử với Hint 1–2 nhưng bị chặn bởi cú pháp. Việc dùng Hint 3 phải được ghi vào evidence.
+Đã được người học chủ động yêu cầu ngày 2026-11-02 để giảm thời gian gõ cú pháp. Codex thêm khung try-with-resources, giải thích syntax và các String literal vào comment trong source; chưa thêm implementation chạy thật của G2-A.
 
 ## Lệnh kiểm chứng sau khi viết
 
