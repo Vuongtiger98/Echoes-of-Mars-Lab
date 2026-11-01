@@ -190,3 +190,16 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Cần phân biệt số ngoài menu (`default`) với String không parse được (`catch`), và arrow label với colon label/fall-through.
 - **Theory/coding changes:** Không đổi level; scaffold AI không phải coding evidence.
 - **Next session action:** Người học trả lời bốn prediction, chuyển helper cần thiết thành code thật, rồi yêu cầu Codex review bốn acceptance cases.
+
+## 2026-11-02 / CONSOLE-G2B-016 (TECHNICALLY_COMPLETE)
+
+- **Objective and concepts:** Hoàn thành parse, `switch`, `default` và `NumberFormatException` cho một lần input.
+- **IBM course(s), question UIDs:** IBM 2; `java-097`/`java-065` mapped/unreviewed, không dùng answer_raw.
+- **Learner theory answers:** Chưa có theory assessment mới.
+- **Learner-authored code / AI-authored code:** Người học viết implementation từ Hint 3 scaffold và tự sửa brace placement/catch syntax sau compiler feedback. Codex chỉ review/test và xóa helper comment đã hoàn tất.
+- **Files changed and reason:** Source G2-B; `G2B_SWITCH_SELECTION.md`, `PROGRESS.md`, `HANDOFF.md`, `SESSION_LOG.md` ghi completion evidence và G2-C handoff.
+- **Commands actually executed and results:** JDK 21 `javac --release 21` exit 0; full exact output pass cho input 1/2/9/hello; `git diff --check` pass.
+- **Mistakes, fixes, and new questions:** Lần đầu `catch` sai do thiếu brace và exception declaration; người học sửa thành cấu trúc hợp lệ sau phản hồi compiler.
+- **Theory/coding changes:** CORE-03B coding L0 → L1; theory giữ L0. Không thay đổi các theory levels khác.
+- **Git evidence:** `850f5d3 feat: complete G2-B switch selection`.
+- **Next session action:** Chuẩn bị prerequisites G2-C về loop, termination, retry, invalid-input flow và Scanner lifecycle; Challenge Day 1 chưa bắt đầu nếu chưa được người học xác nhận.

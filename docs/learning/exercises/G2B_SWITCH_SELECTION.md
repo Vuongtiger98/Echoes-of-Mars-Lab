@@ -2,7 +2,7 @@
 
 ## Trạng thái
 
-`ASSIGNED_WITH_HINT_3`. Source mới chỉ có AI-authored helper comments; chưa có learner implementation.
+`TECHNICALLY_COMPLETE` tại source checkpoint `850f5d3`.
 
 Baseline: `8285d47 feat: complete G2-A console input`.
 
@@ -54,3 +54,11 @@ Giữ nguyên toàn bộ output G2-A. Sau dòng `You selected: ...`, in thêm đ
 - So khớp exact output cho cả bốn case.
 - `git diff --check` pass.
 - Ghi rõ learner-authored code, AI scaffold và lỗi đã tự sửa.
+
+## Completion evidence — 2026-11-02
+
+- Người học tự triển khai parse, arrow-style switch, default và `NumberFormatException` catch từ scaffold.
+- Compiler ban đầu bắt lỗi thiếu dấu đóng `try`; người học tự sửa cấu trúc `switch`/`try`/`catch` và khai báo exception.
+- JDK 21 compile exit `0`; full output exact match cho input `1`, `2`, `9`, `hello`; `git diff --check` pass.
+- Source checkpoint: `850f5d3 feat: complete G2-B switch selection`.
+- Hint 3 đã dùng; technical completion không chứng minh khả năng tái tạo không cần scaffold.

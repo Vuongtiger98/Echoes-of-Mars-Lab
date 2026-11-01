@@ -3,13 +3,13 @@
 - **Updated at:** 2026-11-02 (Asia/Saigon)
 - **Challenge day:** Day 0 / 7 — audit/setup; thời điểm bắt đầu Day 1 chưa được xác nhận
 - **Canonical folder:** `D:\Documents\Echoes of Mars Lab`
-- **Repository / branch / source checkpoint:** `https://github.com/Vuongtiger98/Echoes-of-Mars-Lab` (public) / `main` / `8285d47` (`feat: complete G2-A console input`)
+- **Repository / branch / source checkpoint:** `https://github.com/Vuongtiger98/Echoes-of-Mars-Lab` (public) / `main` / `850f5d3` (`feat: complete G2-B switch selection`)
 - **Java / build tool:** target Java 21; PATH JDK/Javac 25.0.3; JDK 21.0.1 đã chạy G1; Maven/Gradle chưa cài
-- **Build status / tests:** G2-A JDK 21 compile pass; input `2` và `hello` run exit 0, exact-output true; `git diff --check` pass
+- **Build status / tests:** G2-B JDK 21 compile pass; input `1`, `2`, `9`, `hello` all exact-output pass; `git diff --check` pass
 - **Current architecture:** Greenfield starter kit; architecture evolution proposed in `ROADMAP.md`
 - **Current user-selected objective:** Dựng lại Echoes of Mars Learning Lab từ đầu, giữ coverage 14 IBM courses + 386 questions
-- **Feature slice in progress:** G2-A `TECHNICALLY_COMPLETE`; G2-B `THEORY_PREPARATION_READY`, chưa giao coding
-- **Knowledge topics / IBM mapping:** IBM 2 — CORE-01 L1/L1; CORE-02 L2/L1; CORE-03A input L0/L1; JAVA-04A L2/L1
+- **Feature slice in progress:** G2-A/G2-B `TECHNICALLY_COMPLETE`; G2-C chưa giao
+- **Knowledge topics / IBM mapping:** IBM 2 — CORE-01 L1/L1; CORE-02 L2/L1; CORE-03A input L0/L1; CORE-03B control flow L0/L1; JAVA-04A L2/L1
 - **Question UIDs used:** `java-055`, `java-086` mapped/unreviewed; chưa dùng answer_raw
 - **Learning modes:** Office Study Mode ban ngày; Home Coding Mode buổi tối; nối bằng `HANDOFF.md` và Git checkpoint
 
@@ -32,6 +32,7 @@
 - Teacher Review duyệt G2-A và phát hiện mâu thuẫn thứ tự build tool; roadmap đã thống nhất G3 domain → G4 Maven/JUnit → G5 resource/crew → G6 simulation → G7 file persistence.
 - Người học hoàn thành G2-A từ Hint 3 scaffold; lần đầu thiếu nối biến `choice`, sau targeted helper đã tự sửa. Hai exact-output acceptance cases pass tại `8285d47`.
 - Chuẩn bị `G2B_PREREQUISITES.md` cho Office Study Mode; chưa sửa source G2-B.
+- Người học hoàn thành G2-B từ scaffold; tự sửa cấu trúc try/catch; bốn full-output cases pass tại `850f5d3`.
 
 ## Người học đã chứng minh điều gì?
 
@@ -49,16 +50,16 @@
 6. Git remote public đã cấu hình và local/remote `main` đồng bộ tại lần audit gần nhất; mỗi phiên vẫn phải kiểm tra lại trước khi tuyên bố sync.
 7. Khi feedback dùng snapshot cũ, giữ chronology trong `SESSION_LOG.md`; không ghi đè evidence mới hơn.
 8. Đóng `Scanner(System.in)` cũng đóng standard input; G2-A đóng ở cuối chương trình, G2-B/C phải tái sử dụng một scanner xuyên suốt phiên.
-9. G2-B prerequisite đã sẵn sàng; chưa có Teacher Feedback hoặc learner coding attempt cho `parseInt`/`switch`.
+9. G2-B hoàn thành kỹ thuật bằng Hint 3; cần transfer task không scaffold trong tương lai trước khi suy ra coding independence.
 
 ## Hành động tiếp theo
 
-- **ChatGPT/Copilot — Office Study Mode:** Dùng `G2B_PREREQUISITES.md` để dạy `parseInt`, `int`, basic switch/default và parse failure; fact-check UID trước khi chấm.
-- **Codex — Home Coding Mode:** Chưa sửa source G2-B; chờ Teacher Feedback hoặc yêu cầu bắt đầu practice, sau đó giao learner-first exercise.
-- **Người học:** Khi sẵn sàng, xác nhận có bắt đầu Day 1 hay chưa; học prerequisite G2-B hoặc yêu cầu bắt đầu bài coding với kiến thức tối thiểu.
+- **ChatGPT/Copilot — Office Study Mode:** Dạy prerequisite G2-C: `while`/`do-while`, điều kiện dừng, retry, validation flow và tái sử dụng Scanner; không mặc định đã mastery switch vì coding dùng scaffold.
+- **Codex — Home Coding Mode:** Chuẩn bị G2-C learner-first exercise sau theory preparation; giữ G2-A/B regression cases.
+- **Người học:** Xác nhận Day 1 khi sẵn sàng; sau đó prediction và tự code G2-C.
 
 ## Tệp cần gửi cho ChatGPT
 
 - `docs/learning/HANDOFF.md`
-- `docs/learning/exercises/G2B_PREREQUISITES.md`
+- `docs/learning/exercises/G2B_SWITCH_SELECTION.md`
 - Khi cần bối cảnh chi tiết: `PROGRESS.md`, `ROADMAP.md`

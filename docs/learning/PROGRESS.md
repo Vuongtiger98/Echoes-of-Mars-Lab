@@ -1,6 +1,6 @@
 # PROGRESS | Nhật ký thành thạo có bằng chứng
 
-**Trạng thái:** G0/G1 và G2-A hoàn thành kỹ thuật. G2-A source checkpoint `8285d47`; acceptance input `2`/`hello` đạt. Challenge vẫn là Day 0 cho tới khi người học xác nhận Day 1.
+**Trạng thái:** G0/G1, G2-A và G2-B hoàn thành kỹ thuật. G2-B source checkpoint `850f5d3`; bốn acceptance input đạt. Challenge vẫn là Day 0 cho tới khi người học xác nhận Day 1.
 
 **Evidence boundary:** Việc người dùng chọn kiến trúc greenfield chứng minh quyết định dự án, không chứng minh mastery Java. Không nâng theory/coding level trong phiên audit.
 
@@ -14,14 +14,14 @@
 
 - **Office Study Mode:** G2-A preparation đã hoàn tất; tiếp tục củng cố FQCN/classpath, reference khác object, `close()` khác gán `null`, mutability khác scope/lifecycle, `import` không tải library và nối String khác cộng số.
 - **Home Coding Mode:** G2-A đã hoàn thành với Hint 3/AI-authored scaffold; learner-authored implementation và lần sửa lỗi nối `choice` được kiểm chứng tại `8285d47`.
-- **Tiếp theo:** G2-B `ASSIGNED_WITH_HINT_3`; source có AI-authored helper comments, chưa có learner implementation. Office Study Mode vẫn có thể dùng `exercises/G2B_PREREQUISITES.md` song song.
+- **Tiếp theo:** G2-C menu loop, retry invalid input và thoát an toàn; cần giữ một Scanner xuyên suốt phiên console. Chưa giao G2-C.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |
 |---|---|---|---|---|---|---|---|
 | CORE-01 | javac, JVM, classpath, main, import | 2 | L1 | L1 | Dự đoán đúng class thiếu package sẽ không chạy; còn nhầm FQCN với file path. Nhận biết tác dụng cơ bản của `import`, cần củng cố rằng import không tải library và có thể dùng FQCN | Người học tự thêm/cleanup `println`; commit `6eabcc2`; compile/run/diff check pass | 2026-11-02 |
 | CORE-02 | Biến, primitive/reference, String | 2 | L2 | L1 | Dự đoán đúng reference được gán lại tới object khác; phân biệt String/StringBuilder sau sửa sai; hiểu `parseInt()` trả `int` và không đổi String gốc | Tự khai báo `String choice`, đọc và nối với literal sau targeted helper; G2-A exact-output pass tại `8285d47` | 2026-11-02 |
 | CORE-03A | Console input với Scanner | 2 | L0 | L1 | Scanner/input đã được tiếp cận; Teacher Feedback chưa đề xuất theory level riêng | Tự tạo Scanner từ scaffold, đọc `nextLine()` và dùng input; input `2`/`hello` pass tại `8285d47` | 2026-11-02 |
-| CORE-03B | if, switch, for, while | 2 | L0 | L0 | Chưa đánh giá | G2-A cố ý chưa dùng control flow | — |
+| CORE-03B | if, switch, for, while | 2 | L0 | L1 | Chưa có theory assessment mới | Tự viết parse + switch/default + catch từ scaffold; input 1/2/9/hello pass tại `850f5d3` | 2026-11-02 |
 | OOP-01 | Class, object, constructor, this | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | OOP-02 | Encapsulation, interfaces, polymorphism | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | COLL-01 | Generic, List, ArrayList | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
