@@ -2,7 +2,7 @@
 
 ## Trạng thái
 
-`THEORY_PREPARATION_READY`. Đây là handoff cho Office Study Mode, chưa phải bài coding đã được giao hoặc hoàn thành.
+`THEORY_PREPARATION_READY`. Coding exercise đã được giao riêng trong `G2B_SWITCH_SELECTION.md` với Hint 3 scaffold theo yêu cầu của người học; chưa có learner implementation.
 
 Source baseline: `8285d47 feat: complete G2-A console input`.
 
@@ -44,6 +44,6 @@ Chuyển String người dùng nhập thành số nguyên và chọn một hành
 
 ## Ranh giới coding
 
-- Chưa cung cấp implementation hoặc snippet hoàn chỉnh.
-- Codex chỉ giao G2-B sau khi nhận Teacher Feedback hoặc khi người học yêu cầu bắt đầu practice với prerequisite tối thiểu.
+- Helper không chứa implementation chạy thật; khung syntax nằm trong comment của source.
+- Người học đã yêu cầu bắt đầu scaffold với prerequisite tối thiểu; theory assessment bổ sung vẫn có thể diễn ra song song.
 - G2-A phải tiếp tục pass trước và sau thay đổi G2-B.

@@ -178,3 +178,15 @@ Next session action:
 - **Theory/coding changes:** Theory giữ nguyên. CORE-02 coding L0 → L1; CORE-03A Scanner/input coding L1; JAVA-04A coding L0 → L1. CORE-03B control flow giữ L0/L0.
 - **Git evidence:** `8285d47 feat: complete G2-A console input`.
 - **Next session action:** G2-B theory preparation về `parseInt`, `int`, `switch`, `case/default` và parse failure; chưa sửa Java cho G2-B.
+
+## 2026-11-02 / CONSOLE-G2B-015 (SCAFFOLD_ASSIGNED)
+
+- **Objective and concepts:** Chuẩn bị G2-B parse String thành `int`, arrow-style switch/default và xử lý `NumberFormatException` một lần; chưa có menu loop.
+- **IBM course(s), question UIDs:** IBM 2; `java-097` và `java-065` mapped/unreviewed, không dùng `answer_raw` làm lời giải. `java-065` chỉ là extension nâng cao, không thay basic switch.
+- **Learner theory answers:** Chưa có prediction G2-B trong phiên scaffold.
+- **Learner-authored code / AI-authored code:** Codex thêm toàn bộ helper comments, syntax scaffold, copy-ready strings và exercise. Chưa có learner implementation; Hint 3 đã dùng theo yêu cầu.
+- **Files changed and reason:** `EchoesOfMarsApplication.java` chỉ thêm comment không chạy; thêm `G2B_SWITCH_SELECTION.md`; cập nhật prerequisite/progress/session records. Chưa tạo handoff mới khi G2-B chưa kết thúc.
+- **Commands actually executed and results:** JDK 21 compile exit 0; G2-A regression input `2` run exit 0/exact true; input `hello` run exit 0/exact true; `git diff --check` pass. Chưa chạy G2-B acceptance vì chưa có implementation.
+- **Mistakes, fixes, and new questions:** Cần phân biệt số ngoài menu (`default`) với String không parse được (`catch`), và arrow label với colon label/fall-through.
+- **Theory/coding changes:** Không đổi level; scaffold AI không phải coding evidence.
+- **Next session action:** Người học trả lời bốn prediction, chuyển helper cần thiết thành code thật, rồi yêu cầu Codex review bốn acceptance cases.

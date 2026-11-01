@@ -14,7 +14,7 @@
 
 - **Office Study Mode:** G2-A preparation đã hoàn tất; tiếp tục củng cố FQCN/classpath, reference khác object, `close()` khác gán `null`, mutability khác scope/lifecycle, `import` không tải library và nối String khác cộng số.
 - **Home Coding Mode:** G2-A đã hoàn thành với Hint 3/AI-authored scaffold; learner-authored implementation và lần sửa lỗi nối `choice` được kiểm chứng tại `8285d47`.
-- **Tiếp theo:** Office Study Mode dùng `exercises/G2B_PREREQUISITES.md`; G2-B chưa được giao coding và chưa có implementation.
+- **Tiếp theo:** G2-B `ASSIGNED_WITH_HINT_3`; source có AI-authored helper comments, chưa có learner implementation. Office Study Mode vẫn có thể dùng `exercises/G2B_PREREQUISITES.md` song song.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |
 |---|---|---|---|---|---|---|---|
