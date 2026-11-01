@@ -3,13 +3,13 @@
 - **Updated at:** 2026-11-02 (Asia/Saigon)
 - **Challenge day:** Day 0 / 7 — audit/setup; thời điểm bắt đầu Day 1 chưa được xác nhận
 - **Canonical folder:** `D:\Documents\Echoes of Mars Lab`
-- **Repository / branch / source checkpoint:** `https://github.com/Vuongtiger98/Echoes-of-Mars-Lab` (public) / `main` / `6eabcc2` (`feat: complete G1 Java entry point`)
+- **Repository / branch / source checkpoint:** `https://github.com/Vuongtiger98/Echoes-of-Mars-Lab` (public) / `main` / `8285d47` (`feat: complete G2-A console input`)
 - **Java / build tool:** target Java 21; PATH JDK/Javac 25.0.3; JDK 21.0.1 đã chạy G1; Maven/Gradle chưa cài
-- **Build status / tests:** G1 `git diff --check`, compile, run và exact-output gate đều pass
+- **Build status / tests:** G2-A JDK 21 compile pass; input `2` và `hello` run exit 0, exact-output true; `git diff --check` pass
 - **Current architecture:** Greenfield starter kit; architecture evolution proposed in `ROADMAP.md`
 - **Current user-selected objective:** Dựng lại Echoes of Mars Learning Lab từ đầu, giữ coverage 14 IBM courses + 386 questions
-- **Feature slice in progress:** G2-A console input `ASSIGNED`; chưa có learner attempt
-- **Knowledge topics / IBM mapping:** CORE-01 / IBM 2 — theory L1, coding L1
+- **Feature slice in progress:** G2-A `TECHNICALLY_COMPLETE`; G2-B `THEORY_PREPARATION_READY`, chưa giao coding
+- **Knowledge topics / IBM mapping:** IBM 2 — CORE-01 L1/L1; CORE-02 L2/L1; CORE-03A input L0/L1; JAVA-04A L2/L1
 - **Question UIDs used:** `java-055`, `java-086` mapped/unreviewed; chưa dùng answer_raw
 - **Learning modes:** Office Study Mode ban ngày; Home Coding Mode buổi tối; nối bằng `HANDOFF.md` và Git checkpoint
 
@@ -30,6 +30,8 @@
 - ChatGPT duyệt roadmap hybrid 7 ngày ngày 2026-11-02; giữ đủ 14 IBM modules/386 questions và ba trục theory coverage/theory level/coding level.
 - Tích hợp Office Study Mode/Home Coding Mode; G2-A/B/C là thứ tự tiếp theo; không sửa Java source khi đồng bộ kế hoạch.
 - Teacher Review duyệt G2-A và phát hiện mâu thuẫn thứ tự build tool; roadmap đã thống nhất G3 domain → G4 Maven/JUnit → G5 resource/crew → G6 simulation → G7 file persistence.
+- Người học hoàn thành G2-A từ Hint 3 scaffold; lần đầu thiếu nối biến `choice`, sau targeted helper đã tự sửa. Hai exact-output acceptance cases pass tại `8285d47`.
+- Chuẩn bị `G2B_PREREQUISITES.md` cho Office Study Mode; chưa sửa source G2-B.
 
 ## Người học đã chứng minh điều gì?
 
@@ -40,21 +42,23 @@
 ## Vấn đề mở / quyết định cần duyệt
 
 1. Java target `21` LTS và package `com.echoesofmars.lab` đã được chấp thuận.
-2. G2-A đang chờ learner attempt; Hint 3 chưa dùng.
+2. G2-A hoàn thành kỹ thuật với Hint 3; cần transfer task về sau để kiểm tra khả năng tự viết lại không cần scaffold.
 3. CORE-01 cần được củng cố trong G2 để phân biệt FQCN/classpath với file path; chưa đủ bằng chứng L2.
 4. Maven + JUnit đã được duyệt ở G4, ngay sau domain slice đầu tiên G3 và trước resource/crew phức tạp, simulation và persistence; chưa được triển khai.
 5. Corpus có 0 verified answer; câu dùng để dạy phải fact-check trước.
 6. Git remote public đã cấu hình và local/remote `main` đồng bộ tại lần audit gần nhất; mỗi phiên vẫn phải kiểm tra lại trước khi tuyên bố sync.
 7. Khi feedback dùng snapshot cũ, giữ chronology trong `SESSION_LOG.md`; không ghi đè evidence mới hơn.
 8. Đóng `Scanner(System.in)` cũng đóng standard input; G2-A đóng ở cuối chương trình, G2-B/C phải tái sử dụng một scanner xuyên suốt phiên.
+9. G2-B prerequisite đã sẵn sàng; chưa có Teacher Feedback hoặc learner coding attempt cho `parseInt`/`switch`.
 
 ## Hành động tiếp theo
 
-- **ChatGPT/Copilot — Office Study Mode:** Củng cố FQCN/classpath và dạy prerequisite G2-A; fact-check UID trước khi chấm; xuất `TEACHER_FEEDBACK` tách coverage/level.
-- **Codex — Home Coding Mode:** Chờ learner attempt G2-A, sau đó review/run two-case gate; sau phiên cung cấp prerequisite G2-B; chưa thêm Spring/Maven/database.
-- **Người học:** Khi sẵn sàng, xác nhận có bắt đầu Day 1 hay chưa; đọc `docs/learning/exercises/G2A_CONSOLE_INPUT.md`, trả lời ba prediction và sửa đúng một Java file.
+- **ChatGPT/Copilot — Office Study Mode:** Dùng `G2B_PREREQUISITES.md` để dạy `parseInt`, `int`, basic switch/default và parse failure; fact-check UID trước khi chấm.
+- **Codex — Home Coding Mode:** Chưa sửa source G2-B; chờ Teacher Feedback hoặc yêu cầu bắt đầu practice, sau đó giao learner-first exercise.
+- **Người học:** Khi sẵn sàng, xác nhận có bắt đầu Day 1 hay chưa; học prerequisite G2-B hoặc yêu cầu bắt đầu bài coding với kiến thức tối thiểu.
 
 ## Tệp cần gửi cho ChatGPT
 
 - `docs/learning/HANDOFF.md`
-- Khi cần bối cảnh chi tiết: `BASELINE_AUDIT.md`, `ROADMAP.md`
+- `docs/learning/exercises/G2B_PREREQUISITES.md`
+- Khi cần bối cảnh chi tiết: `PROGRESS.md`, `ROADMAP.md`

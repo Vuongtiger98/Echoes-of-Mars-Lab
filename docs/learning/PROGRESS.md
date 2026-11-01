@@ -1,6 +1,6 @@
 # PROGRESS | Nhật ký thành thạo có bằng chứng
 
-**Trạng thái:** G0/G1 hoàn thành kỹ thuật. G2-A theory preparation hoàn tất ngày 2026-11-02; G2-A đang `ASSIGNED` và chưa có learner attempt. Challenge vẫn là Day 0 cho tới khi người học xác nhận Day 1.
+**Trạng thái:** G0/G1 và G2-A hoàn thành kỹ thuật. G2-A source checkpoint `8285d47`; acceptance input `2`/`hello` đạt. Challenge vẫn là Day 0 cho tới khi người học xác nhận Day 1.
 
 **Evidence boundary:** Việc người dùng chọn kiến trúc greenfield chứng minh quyết định dự án, không chứng minh mastery Java. Không nâng theory/coding level trong phiên audit.
 
@@ -13,19 +13,20 @@
 ### Hàng đợi gần nhất
 
 - **Office Study Mode:** G2-A preparation đã hoàn tất; tiếp tục củng cố FQCN/classpath, reference khác object, `close()` khác gán `null`, mutability khác scope/lifecycle, `import` không tải library và nối String khác cộng số.
-- **Home Coding Mode:** hoàn thành G2-A theo `exercises/G2A_CONSOLE_INPUT.md`; Hint 3 đã dùng theo yêu cầu dưới dạng AI-authored helper comments/copy-ready strings, chưa có learner implementation.
-- **Sau G2-A:** Codex cung cấp prerequisite G2-B về parse số, `switch`, `default` và invalid input cho ChatGPT xây bài tiếp theo.
+- **Home Coding Mode:** G2-A đã hoàn thành với Hint 3/AI-authored scaffold; learner-authored implementation và lần sửa lỗi nối `choice` được kiểm chứng tại `8285d47`.
+- **Tiếp theo:** Office Study Mode dùng `exercises/G2B_PREREQUISITES.md`; G2-B chưa được giao coding và chưa có implementation.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |
 |---|---|---|---|---|---|---|---|
 | CORE-01 | javac, JVM, classpath, main, import | 2 | L1 | L1 | Dự đoán đúng class thiếu package sẽ không chạy; còn nhầm FQCN với file path. Nhận biết tác dụng cơ bản của `import`, cần củng cố rằng import không tải library và có thể dùng FQCN | Người học tự thêm/cleanup `println`; commit `6eabcc2`; compile/run/diff check pass | 2026-11-02 |
-| CORE-02 | Biến, primitive/reference, String | 2 | L2 | L0 | Dự đoán đúng reference được gán lại tới object khác; phân biệt String/StringBuilder sau sửa sai; hiểu `parseInt()` trả `int` và không đổi String gốc | Chưa có learner-authored code cho concept này | 2026-11-02 |
-| CORE-03 | if, switch, for, while, input | 2 | L0 | L0 | Scanner/input đã được tiếp cận và đủ prerequisite để thử G2-A; control flow chưa được đánh giá, Teacher Feedback chưa đề xuất level riêng | Chưa có learner-authored input/control-flow code | 2026-11-02 |
+| CORE-02 | Biến, primitive/reference, String | 2 | L2 | L1 | Dự đoán đúng reference được gán lại tới object khác; phân biệt String/StringBuilder sau sửa sai; hiểu `parseInt()` trả `int` và không đổi String gốc | Tự khai báo `String choice`, đọc và nối với literal sau targeted helper; G2-A exact-output pass tại `8285d47` | 2026-11-02 |
+| CORE-03A | Console input với Scanner | 2 | L0 | L1 | Scanner/input đã được tiếp cận; Teacher Feedback chưa đề xuất theory level riêng | Tự tạo Scanner từ scaffold, đọc `nextLine()` và dùng input; input `2`/`hello` pass tại `8285d47` | 2026-11-02 |
+| CORE-03B | if, switch, for, while | 2 | L0 | L0 | Chưa đánh giá | G2-A cố ý chưa dùng control flow | — |
 | OOP-01 | Class, object, constructor, this | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | OOP-02 | Encapsulation, interfaces, polymorphism | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | COLL-01 | Generic, List, ArrayList | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | COLL-02 | Map, HashMap, enum | 3 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
-| JAVA-04A | Exception, try/catch, try-with-resources | 2–4 | L2 | L0 | Dự đoán đúng luồng `try/catch`, exception trong try-with-resources và resource đóng trước `catch`; phân biệt `close()` với gán reference thành `null` | Chưa có learner-authored code | 2026-11-02 |
+| JAVA-04A | Exception, try/catch, try-with-resources | 2–4 | L2 | L1 | Dự đoán đúng luồng `try/catch`, exception trong try-with-resources và resource đóng trước `catch`; phân biệt `close()` với gán reference thành `null` | Dùng try-with-resources từ Hint 3 scaffold; compile/run pass tại `8285d47`; chưa tự xử lý exception | 2026-11-02 |
 | JAVA-04B | Validation, file I/O | 2–4 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | JAVA-05 | Lambda, Streams, threading, JVM | 3/10+ | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |
 | ARCH-01 | State, service, composition, testability | 1/10 | L0 | L0 | Chưa đánh giá | Chưa đánh giá | — |

@@ -165,3 +165,16 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Helper nhấn mạnh import không tải library, reference khác object, `Scanner.close()` đóng `System.in`, `nextLine()` trả String và `+` nối String.
 - **Theory/coding changes:** Không đổi level; chưa có learner-authored coding evidence.
 - **Next session action:** Người học chuyển phần cần thiết từ comment thành code chạy thật; Codex sau đó review diff và chạy input `2`/`hello`.
+
+## 2026-11-02 / CONSOLE-G2A-014 (TECHNICALLY_COMPLETE)
+
+- **Objective and concepts:** Hoàn thành G2-A menu tĩnh, Scanner/System.in, local String, `nextLine()`, try-with-resources và String concatenation.
+- **IBM course(s), question UIDs:** IBM 2; `java-086` vẫn mapped/unreviewed, không dùng `answer_raw` làm lời giải.
+- **Learner theory answers:** Không có theory assessment mới trong buổi coding; dùng lại Teacher Feedback G2-A preparation.
+- **Learner-authored code / AI-authored code:** Người học tự chuyển scaffold thành executable menu/input và tự sửa dòng cuối để nối `choice`. Codex đã cung cấp Hint 3 scaffold, dọn indentation/comment và đưa targeted helper sau lần test đầu thất bại.
+- **Files changed and reason:** `EchoesOfMarsApplication.java` triển khai G2-A; learning records ghi evidence; thêm `G2B_PREREQUISITES.md` cho Office Study Mode.
+- **Commands actually executed and results:** JDK 21 `javac --release 21` exit 0. Input `2`: run exit 0, exact output true. Input `hello`: run exit 0, exact output true. `git diff --check` pass.
+- **Mistakes, fixes, and new questions:** Lần đầu người học in `"You selected: "` nhưng chưa dùng `choice`; sau comment gợi ý cú pháp chung, người học tự sửa bằng String concatenation. Cần kiểm tra transfer sau này để biết có tự viết lại không cần scaffold hay không.
+- **Theory/coding changes:** Theory giữ nguyên. CORE-02 coding L0 → L1; CORE-03A Scanner/input coding L1; JAVA-04A coding L0 → L1. CORE-03B control flow giữ L0/L0.
+- **Git evidence:** `8285d47 feat: complete G2-A console input`.
+- **Next session action:** G2-B theory preparation về `parseInt`, `int`, `switch`, `case/default` và parse failure; chưa sửa Java cho G2-B.

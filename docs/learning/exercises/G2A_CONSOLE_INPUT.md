@@ -18,7 +18,7 @@ IBM mapping: Course 2. Question-bank mapping: `java-086` chỉ dùng làm recall
 
 ## Trạng thái và prerequisite
 
-- Trạng thái: `ASSIGNED`; chưa có learner implementation. Hint 3 được dùng ngày 2026-11-02 theo yêu cầu của người học dưới dạng helper comments và copy-ready String literals trong source; scaffold không được tính là learner-authored code.
+- Trạng thái: `TECHNICALLY_COMPLETE` tại source checkpoint `8285d47`. Hint 3 được dùng ngày 2026-11-02 theo yêu cầu của người học dưới dạng helper comments và copy-ready String literals; scaffold không được tính là learner-authored code.
 - Có thể bắt đầu G2-A trước khi hoàn thành toàn bộ theory coverage của Day 1.
 - Trước khi code, cần nhận biết `import`, object/`new`, `System.in`, local variable `String`, `nextLine()` và try-with-resources. Không yêu cầu đã đạt Theory L2 cho tất cả mục này.
 
@@ -100,3 +100,12 @@ javac --release 21 -encoding UTF-8 -d out src/main/java/com/echoesofmars/lab/Ech
 ```
 
 Codex sẽ chạy thêm case `hello`, exact-output check và `git diff --check` khi review.
+
+## Completion evidence — 2026-11-02
+
+- Người học tự chuyển scaffold thành menu chạy thật, tạo `Scanner`, đọc local variable `choice` và in kết quả.
+- Lần review đầu compile thành công nhưng cả hai case thiếu giá trị input ở dòng cuối vì chưa nối `choice`.
+- Codex thay helper dài bằng comment mục tiêu; người học tự sửa thành biểu thức nối String với `choice`.
+- JDK 21 compile exit `0`; input `2` run exit `0`, exact output `true`; input `hello` run exit `0`, exact output `true`; `git diff --check` pass.
+- Source checkpoint: `8285d47 feat: complete G2-A console input`.
+- Technical completion không tự chứng minh người học có thể viết lại toàn bộ bài không dùng scaffold.
