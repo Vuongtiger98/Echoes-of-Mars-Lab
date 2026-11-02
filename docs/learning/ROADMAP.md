@@ -116,11 +116,11 @@ G0–G10 không thay P0–P9; đây là thứ tự triển khai nhỏ hơn. Mọ
 
 ## Thử thách 7 ngày đã được duyệt (bề rộng giữ nguyên)
 
-**Ngày bắt đầu:** Chưa xác nhận; vẫn là Day 0. Không tự đặt Day 1 dựa trên ngày calendar.
+**Ngày bắt đầu:** 2026-11-03 theo xác nhận của người học. Ngày này ghi nhận lúc người học bắt đầu thử thách, không khẳng định các mục tiêu Day 1 đã hoàn tất.
 
 | Ngày | Office Study Mode | Home Coding Mode | Gate mục tiêu |
 |---|---|---|---|
-| 1 | IBM 1, 2, 6; Java `001–040`; fundamentals, FQCN/classpath, input/control flow, Git | G2-A/B/C | Menu/input chạy được; invalid input không crash ở G2-C |
+| 1 | IBM 1, 2, 6; Java `001–040`; fundamentals, FQCN/classpath, input/control flow, Git | G1 recall + G2-A/B/C + GIT-01, xem `exercises/DAY1_EXERCISES.md` | Menu/input chạy được; invalid input không crash ở G2-C; learner giải thích được checkpoint Git |
 | 2 | IBM 3–4; Java `041–080`; OOP, collections, exception; preview JUnit prerequisite | G3 mission domain → G4 Maven/JUnit → bắt đầu G5 resource/crew | Domain có invariant; Maven build và regression test chạy được |
 | 3 | IBM 4, 10; Java `081–121`; Backend `001–015`; I/O, test, JVM/concurrency overview | Hoàn tất G5; G6 deterministic simulation; G7 file persistence nhỏ | Automated tests, save/load round trip và seeded event ổn định |
 | 4 | IBM 5, 7; Backend `016–060`; HTTP/REST, Spring, HTML/JS | Spring Boot REST và dashboard tối thiểu dùng lại domain | State/action endpoint; validation/error response |

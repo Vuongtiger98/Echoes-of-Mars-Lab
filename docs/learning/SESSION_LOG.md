@@ -215,3 +215,15 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Revert chưa làm working tree sạch; cần làm rõ learner muốn giữ dòng `running` như phần bắt đầu G2-C hay revert nốt trước khi coding tiếp.
 - **Theory/coding changes:** Không đổi level. Challenge chuyển Day 0 → Day 1 theo xác nhận rõ ràng.
 - **Next session action:** Office Study Mode học loop/termination/retry/Scanner lifecycle; Home Coding Mode sau đó bắt đầu G2-C từ trạng thái source được xác nhận.
+
+## 2026-11-03 / DAY1-EXERCISES-018 (PREPARED)
+
+- **Objective and concepts:** Chuẩn bị toàn bộ coding exercise và TODO helper cho Day 1; giữ G2-A/B complete và tạo đường tiếp theo qua G2-C.
+- **IBM course(s), question UIDs:** Day 1 coverage mục tiêu IBM 1, 2, 6 và Java Core `java-001`–`java-040`; chưa fact-check UID mới và không dùng answer_raw.
+- **Learner theory answers:** Không có bài đánh giá lý thuyết mới.
+- **Learner-authored code / AI-authored code:** Không thêm runtime implementation; Codex thêm TODO comments G2-C và dọn trailing whitespace còn lại. Các exercise docs do Codex soạn.
+- **Files changed and reason:** Thêm `DAY1_EXERCISES.md`, `CORE01_PACKAGE_CLASSPATH_RECALL.md`, `GIT_DAY1_WORKFLOW.md`, `G2C_MENU_LOOP.md`; cập nhật source TODO comments cùng `ROADMAP.md`, `PROGRESS.md`, `HANDOFF.md`, `SESSION_LOG.md`.
+- **Commands actually executed and results:** Chưa chạy kiểm thử sau thay đổi trong entry hiện tại; bước tiếp theo là compile/run regression G2-B và xác nhận output không đổi vì source mới chỉ thêm comment và dọn whitespace.
+- **Mistakes, fixes, and new questions:** Một trạng thái kiểm tra trung gian báo còn `boolean running = true;`, nhưng đọc source mới nhất xác nhận dòng này đã được revert; không còn runtime experiment đó. Không sửa nội dung learner ngoài whitespace.
+- **Theory/coding changes:** Không đổi level. G2-C vẫn chưa có learner-authored code; TODO scaffold là AI-authored.
+- **Next session action:** Người học đọc Day 1 index và học prerequisites G2-C; sau đó tự làm TODO, Codex review và chạy acceptance multi-line.
