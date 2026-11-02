@@ -1,6 +1,6 @@
 # PROGRESS | Nhật ký thành thạo có bằng chứng
 
-**Trạng thái:** G0/G1, G2-A và G2-B hoàn thành kỹ thuật. G2-B source checkpoint `850f5d3`; bốn acceptance input đạt. Challenge vẫn là Day 0 cho tới khi người học xác nhận Day 1.
+**Trạng thái:** Day 1 / 7 bắt đầu ngày 2026-11-03 theo xác nhận của người học. G0/G1, G2-A và G2-B hoàn thành kỹ thuật. G2-B source checkpoint `850f5d3`; bốn acceptance input đạt.
 
 **Evidence boundary:** Việc người dùng chọn kiến trúc greenfield chứng minh quyết định dự án, không chứng minh mastery Java. Không nâng theory/coding level trong phiên audit.
 
@@ -14,7 +14,7 @@
 
 - **Office Study Mode:** G2-A preparation đã hoàn tất; tiếp tục củng cố FQCN/classpath, reference khác object, `close()` khác gán `null`, mutability khác scope/lifecycle, `import` không tải library và nối String khác cộng số.
 - **Home Coding Mode:** G2-A đã hoàn thành với Hint 3/AI-authored scaffold; learner-authored implementation và lần sửa lỗi nối `choice` được kiểm chứng tại `8285d47`.
-- **Tiếp theo:** G2-C menu loop, retry invalid input và thoát an toàn; cần giữ một Scanner xuyên suốt phiên console. Chưa giao G2-C.
+- **Tiếp theo:** Office Study Mode Day 1 củng cố loop, điều kiện dừng, retry/input validation và tái sử dụng một Scanner; sau prerequisite mới bắt đầu G2-C coding.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |
 |---|---|---|---|---|---|---|---|

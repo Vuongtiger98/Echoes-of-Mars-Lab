@@ -1,14 +1,14 @@
 # HANDOFF | Snapshot mới nhất cho cả ChatGPT và Codex
 
-- **Updated at:** 2026-11-02 (Asia/Saigon)
-- **Challenge day:** Day 0 / 7 — audit/setup; thời điểm bắt đầu Day 1 chưa được xác nhận
+- **Updated at:** 2026-11-03 (Asia/Saigon)
+- **Challenge day:** Day 1 / 7 — người học xác nhận bắt đầu ngày 2026-11-03
 - **Canonical folder:** `D:\Documents\Echoes of Mars Lab`
-- **Repository / branch / source checkpoint:** `https://github.com/Vuongtiger98/Echoes-of-Mars-Lab` (public) / `main` / `850f5d3` (`feat: complete G2-B switch selection`)
+- **Repository / branch / source checkpoint:** `https://github.com/Vuongtiger98/Echoes-of-Mars-Lab` (public) / `main` / `850f5d3` (`feat: complete G2-B switch selection`); local docs checkpoint `e3c9823`; source has uncommitted learner change
 - **Java / build tool:** target Java 21; PATH JDK/Javac 25.0.3; JDK 21.0.1 đã chạy G1; Maven/Gradle chưa cài
 - **Build status / tests:** G2-B JDK 21 compile pass; input `1`, `2`, `9`, `hello` all exact-output pass; `git diff --check` pass
 - **Current architecture:** Greenfield starter kit; architecture evolution proposed in `ROADMAP.md`
 - **Current user-selected objective:** Dựng lại Echoes of Mars Learning Lab từ đầu, giữ coverage 14 IBM courses + 386 questions
-- **Feature slice in progress:** G2-A/G2-B `TECHNICALLY_COMPLETE`; G2-C chưa giao
+- **Feature slice in progress:** G2-A/G2-B `TECHNICALLY_COMPLETE`; G2-C prerequisites queued, coding chưa giao
 - **Knowledge topics / IBM mapping:** IBM 2 — CORE-01 L1/L1; CORE-02 L2/L1; CORE-03A input L0/L1; CORE-03B control flow L0/L1; JAVA-04A L2/L1
 - **Question UIDs used:** `java-055`, `java-086` mapped/unreviewed; chưa dùng answer_raw
 - **Learning modes:** Office Study Mode ban ngày; Home Coding Mode buổi tối; nối bằng `HANDOFF.md` và Git checkpoint
@@ -33,6 +33,8 @@
 - Người học hoàn thành G2-A từ Hint 3 scaffold; lần đầu thiếu nối biến `choice`, sau targeted helper đã tự sửa. Hai exact-output acceptance cases pass tại `8285d47`.
 - Chuẩn bị `G2B_PREREQUISITES.md` cho Office Study Mode; chưa sửa source G2-B.
 - Người học hoàn thành G2-B từ scaffold; tự sửa cấu trúc try/catch; bốn full-output cases pass tại `850f5d3`.
+- Người học xác nhận Day 1 bắt đầu ngày 2026-11-03.
+- Sau thông báo revert, kiểm tra cho thấy source vẫn có uncommitted `boolean running = true;` và trailing whitespace ở đầu `main`; giữ nguyên learner work và ghi đây chưa phải revert sạch. Bản commit `850f5d3` vẫn là verified G2-B baseline.
 
 ## Người học đã chứng minh điều gì?
 
@@ -54,12 +56,13 @@
 
 ## Hành động tiếp theo
 
-- **ChatGPT/Copilot — Office Study Mode:** Dạy prerequisite G2-C: `while`/`do-while`, điều kiện dừng, retry, validation flow và tái sử dụng Scanner; không mặc định đã mastery switch vì coding dùng scaffold.
-- **Codex — Home Coding Mode:** Chuẩn bị G2-C learner-first exercise sau theory preparation; giữ G2-A/B regression cases.
-- **Người học:** Xác nhận Day 1 khi sẵn sàng; sau đó prediction và tự code G2-C.
+- **ChatGPT/Copilot — Office Study Mode:** Day 1: dạy prerequisite G2-C gồm `while`/`do-while`, điều kiện dừng, retry, validation flow và tái sử dụng Scanner; không mặc định đã mastery switch vì coding dùng scaffold.
+- **Codex — Home Coding Mode:** Sau theory preparation, kiểm tra working tree learner changes rồi chuẩn bị G2-C exercise; giữ G2-A/B regression cases.
+- **Người học:** Học prerequisite G2-C ban ngày; trước coding, xác nhận xử lý dòng `boolean running = true;` còn sót trong working tree.
 
 ## Tệp cần gửi cho ChatGPT
 
 - `docs/learning/HANDOFF.md`
 - `docs/learning/exercises/G2B_SWITCH_SELECTION.md`
+- `docs/learning/exercises/G2B_PREREQUISITES.md`
 - Khi cần bối cảnh chi tiết: `PROGRESS.md`, `ROADMAP.md`

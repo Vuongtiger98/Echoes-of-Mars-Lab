@@ -203,3 +203,15 @@ Next session action:
 - **Theory/coding changes:** CORE-03B coding L0 → L1; theory giữ L0. Không thay đổi các theory levels khác.
 - **Git evidence:** `850f5d3 feat: complete G2-B switch selection`.
 - **Next session action:** Chuẩn bị prerequisites G2-C về loop, termination, retry, invalid-input flow và Scanner lifecycle; Challenge Day 1 chưa bắt đầu nếu chưa được người học xác nhận.
+
+## 2026-11-03 / CHALLENGE-DAY1-017 (STARTED)
+
+- **Objective and concepts:** Người học xác nhận bắt đầu Day 1; xác nhận lại baseline G2-B và chuyển sang prerequisite theory cho G2-C.
+- **IBM course(s), question UIDs:** Day 1 theo roadmap: IBM 1, 2, 6 và coverage Java Core `001–040`; chưa có UID mới được dùng/fact-check trong bước bắt đầu này.
+- **Learner theory answers:** Chưa có câu trả lời mới.
+- **Learner-authored code / AI-authored code:** Chưa có code mới được đánh giá. Sau khi người học nói đã revert thử nghiệm, `git status` vẫn cho thấy một uncommitted learner change `boolean running = true;` và trailing whitespace; không sửa thay người học.
+- **Files changed and reason:** `PROGRESS.md`, `HANDOFF.md`, `SESSION_LOG.md` ghi Day 1 start, baseline và trạng thái working tree.
+- **Commands actually executed and results:** `git status`, `git diff`, `git log`; xác nhận source checkpoint `850f5d3`, docs checkpoint `e3c9823`, branch hiện khớp remote trước thay đổi tài liệu. G2-B compile/test evidence giữ nguyên từ review gần nhất.
+- **Mistakes, fixes, and new questions:** Revert chưa làm working tree sạch; cần làm rõ learner muốn giữ dòng `running` như phần bắt đầu G2-C hay revert nốt trước khi coding tiếp.
+- **Theory/coding changes:** Không đổi level. Challenge chuyển Day 0 → Day 1 theo xác nhận rõ ràng.
+- **Next session action:** Office Study Mode học loop/termination/retry/Scanner lifecycle; Home Coding Mode sau đó bắt đầu G2-C từ trạng thái source được xác nhận.
