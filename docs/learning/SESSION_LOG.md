@@ -227,3 +227,10 @@ Next session action:
 - **Mistakes, fixes, and new questions:** Một trạng thái kiểm tra trung gian báo còn `boolean running = true;`, nhưng đọc source mới nhất xác nhận dòng này đã được revert; không còn runtime experiment đó. Không sửa nội dung learner ngoài whitespace.
 - **Theory/coding changes:** Không đổi level. G2-C vẫn chưa có learner-authored code; TODO scaffold là AI-authored.
 - **Next session action:** Người học đọc Day 1 index và học prerequisites G2-C; sau đó tự làm TODO, Codex review và chạy acceptance multi-line.
+
+## 2026-11-03 / DAY1-EXERCISES-019 (HYGIENE_CORRECTION)
+
+- **Correction:** Staged `git diff --check` đã báo trailing whitespace trong `DAY1_EXERCISES.md`, nhưng lệnh ghép tiếp tục tạo commit `288349b`.
+- **Fix:** Xóa whitespace trong file index; append correction này để giữ lịch sử trung thực.
+- **Validation:** Chạy staged diff gate riêng và dừng nếu gate thất bại trước commit correction.
+- **Learning evidence:** Không đổi theory/coding levels hoặc exercise scope.

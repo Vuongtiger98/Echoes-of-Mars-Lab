@@ -1,6 +1,7 @@
 # DAY 1 | Danh sách exercise và trạng thái
 
-**Ngày bắt đầu:** 2026-11-03, theo xác nhận của người học.  
+**Ngày bắt đầu:** 2026-11-03, theo xác nhận của người học.
+
 **Phạm vi lý thuyết:** IBM Courses 1, 2, 6; Java Core UID `java-001`–`java-040`. Đây là mục tiêu coverage, không phải mặc định đã fact-check hay mastery.
 
 ## Coding exercises
