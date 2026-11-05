@@ -15,6 +15,7 @@
 - **Office Study Mode:** G2-A preparation đã hoàn tất; tiếp tục củng cố FQCN/classpath, reference khác object, `close()` khác gán `null`, mutability khác scope/lifecycle, `import` không tải library và nối String khác cộng số.
 - **Home Coding Mode:** G2-A đã hoàn thành với Hint 3/AI-authored scaffold; learner-authored implementation và lần sửa lỗi nối `choice` được kiểm chứng tại `8285d47`.
 - **Day 1 exercise set:** `exercises/DAY1_EXERCISES.md`; G2-C TODO scaffold nằm trong source. G2-C chưa có learner implementation.
+- **Four-day flexible guide:** `FOUR_DAY_OFFICE_HOME_GUIDE.md` plus Day 2–4 TODO exercise documents; planned work only, no progress levels changed.
 - **Tiếp theo:** Office Study Mode củng cố loop, điều kiện dừng, retry/input validation và tái sử dụng một Scanner; sau prerequisite mới bắt đầu G2-C coding.
 
 | Concept ID | Concept | IBM | Theory (L0–L4) | Coding (L0–L4) | Bằng chứng cá nhân | Bằng chứng code/test | Lần cập nhật |

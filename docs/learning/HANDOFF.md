@@ -36,6 +36,7 @@
 - Người học xác nhận Day 1 bắt đầu ngày 2026-11-03.
 - Sau thông báo revert, một lần kiểm tra thoáng thấy `boolean running = true;`, nhưng kiểm tra source tiếp theo xác nhận dòng đó đã được revert; chỉ còn trailing whitespace. Whitespace đã được dọn khi thêm G2-C TODO scaffold. Không giữ lại implementation thử nghiệm.
 - Tạo Day 1 exercise index, recall package/classpath, Git workflow exercise và G2-C menu loop exercise; thêm TODO comments trong source, chưa thêm G2-C runtime behavior.
+- Chuẩn bị guide linh hoạt cho Days 1–4 cùng exercise TODOs cho domain/Maven/JUnit, simulation/persistence và REST; các ngày sau là kế hoạch, chưa phải implementation.
 
 ## Người học đã chứng minh điều gì?
 
@@ -59,7 +60,7 @@
 
 - **ChatGPT/Copilot — Office Study Mode:** Day 1: dạy prerequisite G2-C gồm `while`/`do-while`, điều kiện dừng, retry, validation flow và tái sử dụng Scanner; không mặc định đã mastery switch vì coding dùng scaffold.
 - **Codex — Home Coding Mode:** Sau theory preparation, review learner TODO implementation và chạy G2-A/B regression plus multi-line G2-C acceptance.
-- **Người học:** Mở `docs/learning/exercises/DAY1_EXERCISES.md`; học G2-C prerequisites rồi tự hoàn thành các TODO trong source.
+- **Người học:** Dùng `docs/learning/FOUR_DAY_OFFICE_HOME_GUIDE.md` để chọn việc học ngắn tại công ty; ưu tiên G2-C TODO trong một khoảng coding rảnh.
 
 ## Tệp cần gửi cho ChatGPT
 
@@ -68,4 +69,8 @@
 - `docs/learning/exercises/G2B_PREREQUISITES.md`
 - `docs/learning/exercises/DAY1_EXERCISES.md`
 - `docs/learning/exercises/G2C_MENU_LOOP.md`
+- `docs/learning/FOUR_DAY_OFFICE_HOME_GUIDE.md`
+- `docs/learning/exercises/DAY2_EXERCISES.md`
+- `docs/learning/exercises/DAY3_EXERCISES.md`
+- `docs/learning/exercises/DAY4_EXERCISES.md`
 - Khi cần bối cảnh chi tiết: `PROGRESS.md`, `ROADMAP.md`

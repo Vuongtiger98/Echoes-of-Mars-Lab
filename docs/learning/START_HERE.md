@@ -13,6 +13,7 @@ Các file trong `docs/learning/` là **bản ghi chính thức trong repository*
 - `BASELINE_AUDIT.md`: Codex ghi bằng chứng từ source trước khi tái cấu trúc.
 - `DECISIONS.md`: các quyết định kiến trúc quan trọng.
 - `LESSON_PROTOCOL.md`: định dạng bài học, bài test và bàn giao.
+- `FOUR_DAY_OFFICE_HOME_GUIDE.md`: kế hoạch linh hoạt kết hợp học lý thuyết ở công ty và coding lúc rảnh cho Days 1–4.
 
 ## Vòng lặp một phiên
 

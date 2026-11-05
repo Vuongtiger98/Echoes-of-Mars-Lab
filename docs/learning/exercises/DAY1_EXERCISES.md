@@ -27,3 +27,10 @@
 - Các UID `001–040` không được xem là đã học chỉ vì nằm trong lịch Day 1.
 - Exercise có Hint 3 scaffold phải ghi rõ scaffold AI-authored và đánh giá learner-authored code riêng.
 - Ngày chưa kết thúc thì không đánh dấu Day 1 hoàn thành.
+
+## Làm tại công ty và lúc rảnh
+
+- [ ] 10 phút: trả lời một prediction trong exercise G2-C.
+- [ ] 15 phút: trace một lượt loop bằng tay, ghi điều kiện trước/sau.
+- [ ] 10 phút: đọc một output `git status`/`git diff` cùng Codex hoặc tự ghi điều chưa hiểu.
+- [ ] Home coding: chuyển một TODO G2-C thành code rồi dừng; không cần hoàn tất cả loop trong một phiên.

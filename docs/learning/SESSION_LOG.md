@@ -234,3 +234,15 @@ Next session action:
 - **Fix:** Xóa whitespace trong file index; append correction này để giữ lịch sử trung thực.
 - **Validation:** Chạy staged diff gate riêng và dừng nếu gate thất bại trước commit correction.
 - **Learning evidence:** Không đổi theory/coding levels hoặc exercise scope.
+
+## 2026-11-05 / FOUR-DAY-FLEX-020 (PREPARED)
+
+- **Objective and concepts:** Chuẩn bị hướng dẫn Office Study Mode/Home Coding Mode linh hoạt cho Days 1–4 để người học có thể học tại công ty và code lúc rảnh.
+- **IBM course(s), question UIDs:** Bao phủ mục tiêu IBM 1–7 và Java/Backend UID ranges theo roadmap cho Days 1–4; ranges là coverage targets, chưa kiểm chứng answer raw hoặc mastery.
+- **Learner theory answers:** Không có câu trả lời mới.
+- **Learner-authored code / AI-authored code:** Không tạo runtime implementation. Codex viết study guide và exercise TODO documents.
+- **Files changed and reason:** Thêm `FOUR_DAY_OFFICE_HOME_GUIDE.md`, `DAY2_EXERCISES.md`, `DAY3_EXERCISES.md`, `DAY4_EXERCISES.md`; bổ sung time-boxed checklist vào Day 1 index; cập nhật handoff.
+- **Commands actually executed and results:** Chưa chạy build/test vì chỉ thêm learning documents; source Java không đổi trong phiên này.
+- **Mistakes, fixes, and new questions:** Các ngày 2–4 được ghi là kế hoạch, không phải trạng thái triển khai. Maven là prerequisite có điều kiện vì chưa xác nhận cài đặt.
+- **Theory/coding changes:** Không đổi level hoặc đánh dấu ngày/course hoàn thành.
+- **Next session action:** Người học chọn TODO ngắn phù hợp thời gian; ưu tiên hoàn tất G2-C prerequisites/implementation trước khi bắt đầu G3.
